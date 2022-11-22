@@ -39,12 +39,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.apple.com/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Apple home page  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Thuispagina  
+  <img src="readme-images/homepage-apple-1.jpg" width="375px" alt="eerste gedeelte van de thuispagina"> 
+  <img src="readme-images/homepage-apple-2.jpg" width="375px" alt="tweede gedeelte van de thuispagina">
+  <img src="readme-images/homepage-apple-3.jpg" width="375px" alt="eerste gedeelte van de thuispagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Accessoires
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Alleen bij Apple pagina
+  <img src="readme-images/applXclusive-page-1.jpg" width="375px" alt="eerste gedeelte van de alleen-bij-apple pagina">
+  <img src="readme-images/applXclusive-page-2.jpg" width="375px" alt="eerste gedeelte van de alleen-bij-apple pagina">
+  <img src="readme-images/applXclusive-page-3.jpg" width="375px" alt="eerste gedeelte van de alleen-bij-apple pagina">
  
 </details>
 
@@ -78,7 +82,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Apple heeft niet per se voor alle visuele beperkingen een uitzondering gemaakt, denk aan blurry vision. Maar door de hoge contrast in de website opmaak is de content in alle gevallen duidelijk. Er is geen verschil in de light\dark modus. Voor het geval dat een persoon met een bril een keer zonder bril de apple website moet navigeren, dan kan het nog net door de grote onderscheid in lettergrootte en kleur contrast.
-  <img src="toegankelijkheid-visueel-blurry.jpg" width="375px" alt="home pagina met blurry vision enabled">
+  <img src="readme-images/toegankelijkheid-visueel-blurry.jpg" width="375px" alt="home pagina met blurry vision enabled">
 
   Voor dit onderdeel weet ik zelf geen verbetering om toe te voegen zonder de opmaak nadelig aan te passen.
 
