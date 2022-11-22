@@ -45,7 +45,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homepage-apple-3.jpg" width="375px" alt="eerste gedeelte van de thuispagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Alleen bij Apple pagina
+  Alleen bij Apple pagina 
   <img src="readme-images/applXclusive-page-1.jpg" width="375px" alt="eerste gedeelte van de alleen-bij-apple pagina">
   <img src="readme-images/applXclusive-page-2.jpg" width="375px" alt="eerste gedeelte van de alleen-bij-apple pagina">
   <img src="readme-images/applXclusive-page-3.jpg" width="375px" alt="eerste gedeelte van de alleen-bij-apple pagina">
