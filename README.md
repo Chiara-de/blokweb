@@ -61,7 +61,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  - Apple website heeft geen <header> door het gehele website 
+  - Apple website heeft geen <header> door het gehele website
+  - Alle sections op de thuispagina zijn links naar de pagina, very touch sensitive voor wanneer je alleen wilt scrollen
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
