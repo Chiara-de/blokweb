@@ -61,6 +61,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - Apple website heeft geen <header> door het gehele website, lezen 
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -117,18 +118,35 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - Ik moet mijn toegankelijksheid analyse nog afmaken.
+  - Ik ben begonnen met de breakdown schetsen om te kijken hoe de website van Apple in semantisch HTML eruit zal zien.
+  Het lastige tot nu toe is het bijhouden van de sections en de nth-selectors. Bij mobile-first maakt het visueel wienig uit maar voor de desktop view veranderd de compositie wel opvallend.
+  
+  Ik denk dat ik aan de hand van deze methode efficienter zou kunnen coderen later met semantisch HTML en per deel met CSS
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | student 1: Chiara         
+  | ---                       
+  | Beste manier om de toegankelijkheidstest uit te voeren. 
+  | En is er nog wat belangrijks om toe te voegen aan de breakdown schets tot nu toe.
+  
+  | student 2:  Esra  
+  | --- 
+  | Positioneren van elementen
+  |
+  
+  | student 3: Rose   
+  | ---   
+  | Compositie en volgorde van de grid
+  |
+  
+  | student 4: Thimo        
+  | ---   
+  | en ik nog met dit en dat
+  |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
