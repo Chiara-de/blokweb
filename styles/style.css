@@ -40,6 +40,13 @@ article:nth-child(odd) {
 	background-color: aliceblue;
 }
 
+Section:nth-child(even) {
+	background-color: black;
+	color: white;
+}
+
+
+
 img {
 	width: auto;
 	height: 400px;
