@@ -31,4 +31,16 @@ button, summary {
 /****************/
 
 /* jouw code */
+nav {
+	background-color: black;
+	color: white;
+}
 
+article:nth-child(odd) {
+	background-color: aliceblue;
+}
+
+img {
+	width: auto;
+	height: 400px;
+}
