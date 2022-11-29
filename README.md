@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood
 
   #### Je focus:
-  Responsive & Surface plane
+  Responsive
  
 </details>
 
@@ -121,41 +121,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   - Ik moet mijn toegankelijksheid analyse nog afmaken.
   - Ik ben begonnen met de breakdown schetsen om te kijken hoe de website van Apple in semantisch HTML eruit zal zien.
-  Het lastige tot nu toe is het bijhouden van de sections en de nth-selectors. Bij mobile-first maakt het visueel wienig uit maar voor de desktop view veranderd de compositie wel opvallend.
-  
-  Ik denk dat ik aan de hand van deze methode efficienter zou kunnen coderen later met semantisch HTML en per deel met CSS
+  Het lastige tot nu toe is het bijhouden van de sections en de nth-selectors. Bij mobile-first maakt het visueel wienig uit maar voor de desktop view veranderd de compositie wel opvallend. Ik denk dat ik aan de hand van deze methode efficienter zou kunnen coderen later met semantisch HTML en per deel met CSS.
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
 
   | student 1: Chiara         
   | ---                       
   | Beste manier om de toegankelijkheidstest uit te voeren. 
   | En is er nog wat belangrijks om toe te voegen aan de breakdown schets tot nu toe.
   
-  | student 2:  Esra  
+  | student 2:  Emre  
   | --- 
-  | Positioneren van elementen
-  |
-  
-  | student 3: Rose   
-  | ---   
-  | Compositie en volgorde van de grid
-  |
-  
-  | student 4: Thimo        
-  | ---   
-  | en ik nog met dit en dat
+  | impromptu question
   |
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - punt 1: Gewoon beginnen met coderen en zo doende leren en aanpassen en vragen stellen.
+  - punt 2: De breakdown schets is bedoeld om het makkelijker te maken voor jezelf tijdens het coderen, het is niet nadrukkelijk verplicht.
   - nog een punt
-  - ...
 
 </details>
 
