@@ -130,17 +130,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---                       
   | Beste manier om de toegankelijkheidstest uit te voeren. 
   | En is er nog wat belangrijks om toe te voegen aan de breakdown schets tot nu toe.
+  | Extra vraag: toegankelijkheidstest is lastig om uit te voeren, hoe kan dit makkelijker.
   
   | student 2:  Emre  
   | --- 
   | impromptu question
-  |
 
   ### Verslag van meeting
 
   - punt 1: Gewoon beginnen met coderen en zo doende leren en aanpassen en vragen stellen.
   - punt 2: De breakdown schets is bedoeld om het makkelijker te maken voor jezelf tijdens het coderen, het is niet nadrukkelijk verplicht.
-  - nog een punt
+  - punt 3: Noteer de knelpunten op als observaties tijdens het uitzoeken. Hoeft niet al te gedetailleerd.
 
 </details>
 
