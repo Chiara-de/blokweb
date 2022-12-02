@@ -154,7 +154,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Aan de thuispagina heb ik hard gewerkt om de stijl zo goed mogelijk vorm te geven. Met knelpunten zoals de hamburger menu, de footer, en een carousel.
+  Ik was ook halverwege vergeten dat de opdracht mobile-first is en moest ik dit waar nodig nog aanpassen. Voor mij was het ook nog onduidelijk walke focus ik heb voor deze opdracht. Omdat de Apple website zelf veel animatie en surface plane aspecten heeft, maar ik aan de responsive deel wilde werken. Dit allemaal door mijn fout om vanuit een desktop-ontwerp te coderen en ik m'n fout moest herstellen. Beginnend met de globale navigatie aka de hamburger menu. Helaas kreeg ik ook errors met men foto-documentatie en moest ik alle file-namen opnieuw benoemen. Kortom, nog veel te doen maar ik weet tot zo ver wat er nog gedaan moet worden.
 
 
   ### Agenda voor meeting
@@ -170,9 +171,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Kijk naar de DLO>JS 3-stap responsive opdracht 2 voor een hamburger menu.
+  - Kijk naar de element z-index voor het coderen van de hamburger menu.
+  - Kies een focus en kijk naar je tijd/haalbaar. Het hoeft niet per se alles te hebben van de originele website.
 - ...
 
 </details>
