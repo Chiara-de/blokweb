@@ -284,8 +284,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
+  1. DLO JS-3Stap Opdracht 2 - voor de hamburger menu - https://codepen.io/shooft/pen/GRxXboQ
+  2. MDN web docs - voor html tag uitleg - (https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)
   3. ...
 
 </details>
