@@ -284,8 +284,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. DLO JS-3Stap Opdracht 2 - voor de hamburger menu - https://codepen.io/shooft/pen/GRxXboQ
-  2. MDN web docs - voor html tag uitleg - (https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)
-  3. ...
+  1. DLO JS-3Stap Opdracht 2 - voor de hamburger menu - (https://codepen.io/shooft/pen/GRxXboQ)
+  2. MDN web docs - voor CSS uitleg (https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)
+  3. MDN web docs - voor HTML element uitleg (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+  4. 
+  5. 
 
 </details>
