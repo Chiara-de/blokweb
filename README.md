@@ -225,7 +225,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  De achterstand van m'n eerste week speelt nu een grotere rol, doordat ik mijn tweede pagina iets te veel in de achtergrond heb gelaten methet invullen van de content. Na lange werk aan de hamburger menu kan ik nu gerichter aan het werk met mijn footer en de tweede pagina die veel animatie heeft. Hopelijk lukt het mij om tenmiste te essentiële delen van de pagina te kunnen uitwerken. Een mogelijke vraag is de aantal hyperlinks in mijn copy website, zal ik de links verbinden naar de albestaande pagina's van Apple zelf?
+  De achterstand van m'n eerste week speelt nu een grotere rol, doordat ik mijn tweede pagina iets te veel in de achtergrond heb gelaten methet invullen van de content. Na lange werk aan de hamburger menu kan ik nu gerichter aan het werk met mijn footer en de tweede pagina die veel animatie heeft. Hopelijk lukt het mij om tenmiste te essentiële delen van de pagina te kunnen uitwerken. Een mogelijke vraag is de aantal hyperlinks in mijn copy website, zal ik de links verbinden naar de albestaande pagina's van Apple zelf? En in de details-summary, moet ik een ordered list of linked paragraafjes?
 
 
   ### Agenda voor meeting
