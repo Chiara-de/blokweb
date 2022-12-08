@@ -31,23 +31,409 @@ button, summary {
 /****************/
 
 /* jouw code */
-nav {
-	background-color: black;
-	color: white;
+
+
+/****************/
+/* global css styling */
+/****************/
+body {
+	margin: 0;
+	font-family: sofia-pro,sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
-article:nth-child(odd) {
-	background-color: aliceblue;
+/*     !CHEATCODE! from Apple.inc inspect
+li { 							
+	box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    z-index: 1;
+    vertical-align: top; 
+	*/
+	
+	/*   my code
+	padding: 0 1em; 
+} 
+*/
+
+h1, h2, h3, h4, p, a {
+	margin: 0%;
+	padding: 2px 0;
 }
 
-Section:nth-child(even) {
-	background-color: black;
-	color: white;
+a {
+	text-decoration: none;
+	color: #0066cc;
+	/* color: #0066cc    - op background wit */
+}
+
+h1, h2 {
+	font-weight: 600;
+	font-size: 32px;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 17px;
+}
+
+h4 {
+	font-weight: 300;
+	font-size: 17px;
+}
+
+footer {
+	background-color: #f5f5f7;
+	/* ON HOVER and ACTIVE - color: #1d1d1f */
+	color: #6e6e73;
+	text-align: left;
+	padding: 2em 1em;
+
+	font-weight: 300;
+	font-size: 12px;
+}
+
+@media only screen and (min-width: 734px) {
+	h2 {
+		font-weight: 600;
+		font-size: 54px;
+	}
+	
+	h3 {
+		font-weight: 300;
+		font-size: 26px;
+	}
+	
+	h4 {
+		font-weight: 300;
+		font-size: 21px;
+	}
+}
+
+
+/* **********  DIT IS DE HEADER *********** */
+/* ****************************** */
+header {
+	margin: 0;
+	background-color: #1d1d1f;
+	/* on hover color: white; */
+	color: #f5f5f7;
+	width: 100%;
+	padding: 0px 10px;
+
+	min-height: 4em;  /* BORROWED CODE*/
+	line-height: 1; /* BORROWED CODE*/
+	display:flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+/* *** !BORROWED CODE! code uit opdracht DLO > JS-3step opdracht 2 ****  */
+/* alle links in de header */
+header a { 
+	padding: .5em 0;
+	color: #fff;
+	text-decoration: none;
+}
+  
+/* !BORROWED CODE! */
+header button { 
+	/* standaard styling aanpassen */
+	appearance:none;
+	background-color: #1d1d1f;
+	border:none;
+	border-radius:.25em; 
+	font:inherit;
+	text-align:center;
+	color: #fff;
+}
+
+/* !BORROWED CODE! */
+header button img {
+	height: 1rem;
+}
+
+/***************/
+/* HAMBURGER MENU BUTTON */	/* !BORROWED CODE! */
+/***************/
+header > button {
+	order:-1;
+}
+
+/***************/
+/* SLUIT BUTTON */	/* !BORROWED CODE! */
+/***************/
+nav button {
+	justify-self:start;
+	background-color: #000;
+}
+
+/************/
+/* HET MENU */	/* !BORROWED CODE! */
+/************/
+header nav {
+	padding: 1em; /* !BORROWED CODE! */
+	background-color: #000;
+	
+	display: grid;	/* !BORROWED CODE! */
+	align-content: start;	/* !BORROWED CODE! */
+	gap: 1em;	/* !BORROWED CODE! */
+	
+	position: fixed;	/* !BORROWED CODE! */
+	left: 0;	/* !BORROWED CODE! */
+	right: 0;	/* !BORROWED CODE! */
+	top: 0;	/* !BORROWED CODE! */
+	bottom: 0;	/* !BORROWED CODE! */
+	
+	transform:translatex(-100%); /* !BORROWED CODE! */
+	transition:transform .3s; /* !BORROWED CODE! */
+	
+}
+  
+/* als menu open is */	/* !BORROWED CODE! */
+nav.toonMenu {
+	transform:translatex(0);
+}
+  
+/*******************/
+/* NAVIGATIE LIJST MET LINKS */
+/*******************/
+header nav ul { 
+	margin: 0; 
+	padding: 0 2em;
+	list-style: none;
+
+	font-size: 16px;
+	font-weight: 200;
+}
+
+header nav ul li {
+	padding: .3em 0;
+	color: #6e6e73;
+}
+
+hr {
+	width: 100%;
+	color: #464648;
+}
+
+header nav a:first-of-type img {
+	width: 100%;
+	height: auto;
+	padding: 0px;
+}
+
+/* Met deze code zal de navigatie op grote scherm horizontaal geplaatst worden */
+@media only screen and (min-width: 734px) {
+	header nav ul {
+		margin: 0;
+		height: 44px;
+		padding: 0 22px;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 12px;
+
+		position:sticky;
+		top:0;
+	}
+} 
+
+
+
+
+
+
+/****************/
+/* index page css styling */
+/****************/
+
+
+/* **************** DIT IS SECTION 1 ************** */
+/* ****************************** */
+section:nth-child(1) article {
+	padding: 0 1em;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+section:nth-child(1) article:nth-child(1){
+	background-color: #fbfbfd; 
+	padding-top: 32px;
+}
+section:nth-child(1) article:nth-child(2) {
+	background-color: #000; 
+	color: #fff;
+	padding-top: 32px;
+	/* <a> font size in artikel: 17px */
+	/* <a> color: #2997ff    - op background zwart */
+}
+section:nth-child(1) article:nth-child(3) {
+	background-color: #010127; 
+	color: #f5f5f7;
+	padding-bottom: 42px;
+	/* font size in artikel: 17px */
+	/* color: #2997ff    - op background zwart */
+}
+
+/* main section:nth-child(2) > article { */
+
+
+
+
+
+/* **************** DIT IS SECTION 2 ************** */
+/* ****************************** */
+main section:nth-child(2) {
+	background-color: #FBFBFD;
+
+	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+		
+	text-align: center;
+	justify-content: center; 
+}
+
+@media only screen and (min-width: 734px) {
+	main section:nth-child(2) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+section:nth-child(2) article{
+	padding-top: 2em;
+}
+
+main section > ul {
+	width: 100%;
+	height: auto;
+	padding: 3em;
+	display: flex;
+	text-align: center;
+	justify-content: center; 
+}
+
+section:nth-child(2) article:nth-child(even) {
+	background-color: #000; 
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+main section article img {
+	width: 100%;
+	max-height: auto;
+}
+
+/* specifiek de titel van apple watch in artikel 3*/
+main section article:nth-child(3) img:first-of-type {
+	width: 105px;
+	max-height: 85px;
+}
+
+@media only screen and (min-width: 734px) {
+	/* specifiek de titel van apple watch in artikel 3*/
+	main section article:nth-child(3) img:first-of-type {
+		width: 120px;
+		max-height: 110px;
+	}
 }
 
 
 
-img {
-	width: auto;
-	height: 400px;
+
+/* **************** DIT IS SECTION 3 ************** */
+/* ****************************** */
+main section:nth-child(3) ul{
+	margin: 0;
+	padding: 8px 0;
 }
+
+
+main section:nth-child(3) ul > li {
+	list-style: none;
+	padding: 5px;
+}
+
+main section:nth-child(3) ul li> img {
+	width: 17rem;
+	height: 100%;
+}
+
+/* 
+@media only screen and (min-width: 734px) {
+	switch src img naar groot versie
+} 
+*/
+
+/* main section > nav {
+	background-color: lightgray;
+	color: darkslateblue;
+    padding: 8px 0;
+} */
+
+
+
+
+
+/* **********  DIT IS DE FOOTER *********** */
+/* ****************************** */
+
+footer > nav {
+	background-color: #f5f5f7;
+	/* ON HOVER and ACTIVE - color: #1d1d1f */
+	color: #6e6e73;
+	text-align: left;
+}
+
+footer h3 {
+	font-weight: 400;
+	font-size: 12px;
+	padding: 5px 0;
+}
+
+footer > nav > ul {
+	padding: 0 1em;
+	display: inline-block;
+}
+
+footer nav ul li > ul {
+	font-weight: 200;
+	padding: 0 1em;
+	display: inline-block;
+	/* text-align: center;
+	justify-content: center; */
+}
+
+
+
+
+
+/****************/
+/* services page css styling */
+/****************/
+header nav:nth-of-type(2) {
+	background-color: lightgray;
+	color: darkslateblue;
+    padding: 8px 0;
+}
+
+header nav ul li img {
+	width: 50px;
+	height: 50px;
+}
+
+
+

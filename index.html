@@ -10,81 +10,203 @@
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<!-- my font import -->
+	<link rel="stylesheet" href="https://use.typekit.net/qtn6ppl.css">
 </head>
 
+<!-- -------COMMENT IMPORTANT OM TOE TE VOEGEVN VOOR AFRONDING------- -->
+<!-- met het aria-label wordt een tekst voor screenreaders en google toegevoegd --> 
+<!-- dit is nodig omdat de button geen tekst bevat -->
+<!-- developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label -->
+<!-- Voeg toe aan alle tags voor toegankelijkheid <nav role="navigation"> -->
+
 <body>
-	<nav>
-        <ul>
-            <li>
-                <a href="index.html">Apple icon</a>
-            </li>
-            <li>
-                <a>Store</a>
-            </li>
-            <li>
-                <a>Mac</a>
-            </li>
-            <li>
-                <a>iPad</a>
-            </li>
-            <li>
-                <a>iPhone</a>
-            </li>
-            <li>
-                <a>Watch</a>
-            </li>
-            <li>
-                <a>Airpods</a>
-            </li>
-            <li>
-                <a>TV &amp;Woning</a>
-            </li>
-            <li>
-                <a href="services.html">Alleen bij Apple</a>
-            </li>
-            <li>
-                <a>Accessoires</a>
-            </li>
-            <li>
-                <a>Support</a>
-            </li>
-        </ul>
-    </nav>
+	<header>
+		<!-- LOGO -->
+		<a href="index.html"><img src="images/homePage/Apple-Home-Imagery01.svg" alt="apple logo small to navigate to home"></a>
+
+		<!-- ------ !BORROWED CODE!    code uit opdracht DLO > JS-3step opdracht 2 --------- -->
+		<!-- de open button -->
+		<!-- de button is niet relevant voor screenreaders -->
+		<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
+			
+		<!--  het menu -->
+        <nav>
+			<!-- ------ !BORROWED CODE!    code uit opdracht DLO > JS-3step opdracht 2 --------- -->
+			<!-- de sluit button -->
+			<!-- de button is ook niet relevant voor screenreaders -->
+			<!-- "https://assets.codepen.io/274456/ui-icon-cross.svg" -->
+			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
+			<!-- Zoekbalk foto -->
+			<a href=""><img src="images/localNAV/apple-navglobal-mobile-search.png" alt=""></a>
+			<hr>
+            <ul>
+				<li>
+                    <a>Store</a>
+                </li>
+				<hr>
+                <li>
+                    <a>Mac</a>
+                </li>
+				<hr>
+                <li>
+                    <a>iPad</a>
+                </li>
+				<hr>
+                <li>
+                    <a>iPhone</a>
+                </li>
+				<hr>
+                <li>
+                    <a>Watch</a>
+                </li>
+				<hr>
+                <li>
+                    <a>Airpods</a>
+                </li>
+				<hr>
+                <li>
+                    <a>TV &amp; Woning</a>
+                </li>
+				<hr>
+                <li>
+                    <a href="/services.html">Alleen bij Apple</a>
+                </li>
+				<hr>
+                <li>
+                    <a>Accessoires</a>
+                </li>
+				<hr>
+                <li>
+                    <a>Support</a>
+                </li>
+            </ul>
+        </nav>
+
+		<!-- Winkelmandje link -->
+		<a href=""><img src="images/localNAV/Apple-NavGlobal-Mobile2.svg" alt=""></a>
+    </header>
+
     <main>
         <section>
 			<article>
-				<h2>Apple Shopping Event</h2> 
-				<h3>Tot en met 28 november krijg je een Appple Gift Card bij aankoop van een in aanmerking komend product.</h3>
-				<h4>
-					<a href="eventpageDoesNotExist">Shop nu &gt;</a>
-				</h4>
-				<picture>
-					<source srcset="/images/5-Apple-refurbished-products-landscape.png"
-							media="(orientation: landscape)">
-					<img src="images/5-Apple-refurbished-products-landscape.png" alt="testing image placeholder for article apple event">
-				</picture>
-			</article>
-			<article>
-				<h2>iPhone 14</h2> 
+				<h1>iPhone 14</h1> 
 				<h3>Groot en groter.</h3>
 				<h4>
-					<a href="eventpageDoesNotExist">Shop nu &gt;</a>
+					<a href="pageDoesNotExist">Meer informatie &gt;</a> &nbsp; <a href="pageDoesNotExist">Koop &gt;</a>
 				</h4>
-				<picture>
-					<source srcset="/images/appleUK-stockImage-portraitProducts.png"
-							media="(orientation: portrait)">
-					<img src="images/appleUK-stockImage-portraitProducts.png" alt="testing image placeholder for article iphone 14">
-				</picture>
+				<img src="images/homePage/Apple-Home-Imagery-Mobile01.jpg" alt="Image of an iphone 14">
+			</article>
+			<article>
+				<h2>iPhone 14 Pro</h2> 
+				<h3>Pro. Op topniveau.</h3>
+				<h4>
+					<a href="pageDoesNotExist">Meer informatie &gt;</a> &nbsp; <a href="pageDoesNotExist">Koop &gt;</a>
+				</h4>
+				<img src="images/homePage/Apple-Home-Imagery-Mobile 02.jpg" alt="Image of an iPhone 14 Pro">
+			</article>
+			<article>
+				<!-- hier komt een animatie-->
+				<img src="images/homePage/Apple-Home-Imagery-Mobile13.jpg" alt="gift picture">
+				<h2>Geef WOW.</h2> 
+				<h3>Vind de komende feestdagen het perfecte cadeau voor iedereen op je lijstje.</h3>
+				<h4>
+					<a href="eventpageDoesNotExist">Zoek iets uit in de cadeaugids &gt;</a>
+				</h4>
 			</article>
         </section>
         <section>
-			<!-- grid sections or articles -->
+			<article>
+				<h2>iPad</h2> 
+				<h3>Verbeelding. Betovering. Hebbeding.</h3>
+				<h4>
+					<a href="pageDoesNotExist">Meer informatie &gt;</a> &nbsp; <a href="pageDoesNotExist">Koop &gt;</a>
+				</h4>
+				<img src="images/homePage/Apple-Home-Imagery04.jpg" alt="Image of colorful iPads">
+			</article>
+			<article>
+				<h2>Airpods Pro</h2> 
+				<h3>Zo klinkt vernieuwing.</h3>
+				<h4>
+					<a href="pageDoesNotExist">Meer informatie &gt;</a> &nbsp; <a href="pageDoesNotExist">Koop &gt;</a>
+				</h4>
+				<img src="images/homePage/Apple-Home-Imagery05.jpg" alt="Image of Airpods Pro">
+			</article>
+			<article>
+				<img src="images/homePage/Apple-Home-Imagery06.png" alt="apple watch ultra">
+				<h3>Klaar voor avontuur</h3>
+				<h4>
+					<a href="pageDoesNotExist">Meer informatie &gt;</a> &nbsp; <a href="pageDoesNotExist">Koop &gt;</a>
+				</h4>
+				<img src="images/homePage/Apple-Home-Imagery07.jpg" alt="Image of the Apple Watch Ultra">
+			</article>
+			<article>
+				<h2>iPad Pro</h2> 
+				<h3>Met de superkracht van <!-- <icon img>Apple Tv 4K </icon img>  --> </h3>
+				<h4>
+					<a href="pageDoesNotExist">Meer informatie &gt;</a> &nbsp; <a href="pageDoesNotExist">Koop &gt;</a>
+				</h4>
+				<img src="images/homePage/Apple-Home-Imagery09.jpg" alt="Image of an iPad Pro">
+			</article>
         </section>
         <section>
-            <!-- image list carrousel-->
+			<ul>
+				<li><img src="images/homePage/Apple-Home-Imagery-Mobile.jpg" alt="testing images in carousel 1"></li>
+				<li><img src="images/homePage/Apple-Home-Imagery-Mobile03.jpg" alt="testing images in carousel 2"></li>
+				<li><img src="images/homePage/Apple-Home-Imagery-Mobile05.jpg" alt="testing images in carousel 3"></li>
+				<li><img src="images/homePage/Apple-Home-Imagery-Mobile07.jpg" alt="testing images in carousel 4"></li>
+				<li><img src="images/homePage/Apple-Home-Imagery-Mobile11.jpg" alt="testing images in carousel 5"></li>
+			</ul>
         </section>
     </main>
+
+	<footer>
+		<nav>
+            <ul>
+                <li>
+					<!-- on click open nav met h3=label-name -->
+					<!-- make style h3 opacity: 100% or color: black on hover & active -->
+                    <h3><a>Bestellen en informatie</a></h3>
+                </li>
+                <li>
+                    <h3><a>Services</a></h3>
+                </li>
+                <li>
+                    <h3><a>Account</a></h3>
+					<ul>
+						<!-- make style: underline on hover -->
+						<li><a>Je Apple ID beheren</a></li>
+						<li><a>Apple Store-account</a></li>
+						<li><a>iCloud.com</a></li>
+					</ul>
+                </li>
+                <li>
+                    <h3><a>Apple Store</a></h3>
+                </li>
+                <li>
+					<h3><a>Voor bedrijven</a></h3>
+                </li>
+                <li>
+					<h3><a>Voor het onderwijs</a></h3>
+					<ul>
+						<!-- make style: underline on hover -->
+						<li><a>Apple en het onderwijs</a></li>
+						<li><a>Aankopen voor je studie</a></li>
+					</ul>
+                </li>
+            </ul>
+        </nav>
+		<section>
+			<p>Andere manieren om te shoppen: Zoek een Apple Store of andere winkel bij jou in de buurt. Of bel 0800 0200 570.</p>
+			<p>Nederland</p> 
+			<p>Copyright © 2022 Apple Inc. Alle rechten voorbehouden. Dit is een copy versie gemaakt door Chiara Enters.</p>
+			<p>Privacybeleid &#124; Gebruik van cookies &#124; Gebruiksvoorwaarden &#124; Verkoopvoorwaarden &#124; Juridische informatie &#124; Site-overzicht</p>
+		</section>
+	</footer>
+
 	<script defer src="scripts/script.js"></script>
+
 </body>
 	
 </html>
