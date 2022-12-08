@@ -174,7 +174,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Kijk naar de DLO>JS 3-stap responsive opdracht 2 voor een hamburger menu.
   - Kijk naar de element z-index voor het coderen van de hamburger menu.
   - Kies een focus en kijk naar je tijd/haalbaar. Het hoeft niet per se alles te hebben van de originele website.
-- ...
+  - Kijk naar de details-tag voor in de footer.
 
 </details>
 
@@ -225,7 +225,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De achterstand van m'n eerste week speelt nu een grotere rol, doordat ik mijn tweede pagina iets te veel in de achtergrond heb gelaten methet invullen van de content. Na lange werk aan de hamburger menu kan ik nu gerichter aan het werk met mijn footer en de tweede pagina die veel animatie heeft. Hopelijk lukt het mij om tenmiste te essentiële delen van de pagina te kunnen uitwerken. Een mogelijke vraag is de aantal hyperlinks in mijn copy website, zal ik de links verbinden naar de albestaande pagina's van Apple zelf?
 
 
   ### Agenda voor meeting
