@@ -16,44 +16,62 @@
 
 <body>
     <header>
+		<!-- LOGO -->
+		<a href="index.html"><img src="images/homePage/Apple-Home-Imagery01.svg" alt="apple logo small to navigate to home"></a>
+
+		<!-- ------ !BORROWED CODE!    code uit opdracht DLO > JS-3step opdracht 2 --------- -->
+		<!-- de open button -->
+		<!-- de button is niet relevant voor screenreaders -->
+		<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
+			
+		<!--  het menu -->
         <nav>
+			<!-- ------ !BORROWED CODE!    code uit opdracht DLO > JS-3step opdracht 2 --------- -->
+			<!-- de sluit button -->
+			<!-- de button is ook niet relevant voor screenreaders -->
+			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
+			<!-- Zoekbalk foto -->
+			<a href=""><img src="images/localNAV/apple-navglobal-mobile-search.png" alt=""></a>
             <ul>
-                <li>
-                    <a href="index.html">Apple icon</a>
+				<li>
+                    <a>Store</a>
                 </li>
                 <li>
-                    <a href="pageDoesNotExist">Store</a>
+                    <a>Mac</a>
                 </li>
                 <li>
-                    <a href="pageDoesNotExist">Mac</a>
+                    <a>iPad</a>
                 </li>
                 <li>
-                    <a href="pageDoesNotExist">iPad</a>
+                    <a>iPhone</a>
                 </li>
                 <li>
-                    <a href="pageDoesNotExist">iPhone</a>
+                    <a>Watch</a>
                 </li>
                 <li>
-                    <a href="pageDoesNotExist">Watch</a>
+                    <a>Airpods</a>
                 </li>
                 <li>
-                    <a href="pageDoesNotExist">Airpods</a>
+                    <a>TV &amp; Woning</a>
                 </li>
                 <li>
-                    <a href="pageDoesNotExist">TV &amp;Woning</a>
+                    <a href="/services.html">Alleen bij Apple</a>
                 </li>
                 <li>
-                    <a href="services.html">Alleen bij Apple</a>
+                    <a>Accessoires</a>
                 </li>
                 <li>
-                    <a href="pageDoesNotExist">Accessoires</a>
-                </li>
-                <li>
-                    <a href="pageDoesNotExist">Support</a>
+                    <a>Support</a>
                 </li>
             </ul>
         </nav>
-        <nav>
+
+		<!-- Winkelmandje link -->
+		<a href=""><img src="images/localNAV/Apple-NavGlobal-Mobile2.svg" alt=""></a>
+    </header>
+    
+    <nav>
             <ul>
                 <li>
                     <img src="images/favicon.svg" alt="testing images in nav">
@@ -76,17 +94,16 @@
                     <a href="pageDoesNotExist">Apple Pay</a>
                 </li>
             </ul>
-        </nav>
-    </header> 
-
+    </nav>
+    
     <main>
         <section>
            <h1>Alleen het beste.<br> Alleen bij Apple.</h1> 
-           <h3>Geniet van alles wat je leuk en interessant vindt, op al je favoriete devices. Bekroonde films en series, geweldige muziek in ruimtelijke audio, superleuke games en handige manieren om te betalen. Ontdek de meest vooruitstrevende, relevante, kwalitatieve content. Alleen bij Apple.</h2>
+           <h3>Geniet van alles wat je leuk en interessant vindt, op al je favoriete devices. Bekroonde films en series, geweldige muziek in ruimtelijke audio, superleuke games en handige manieren om te betalen. Ontdek de meest vooruitstrevende, relevante, kwalitatieve content. Alleen bij Apple.</h3>
         </section>
         <section>
             <!-- logo apple one-->
-            <h4>Bundel vier Apple services en geniet meer voor minder.</h3>
+            <h4>Bundel vier Apple services en geniet meer voor minder.</h4>
             <button type="button"> Meer informatie</button>
         </section>
         <section>
@@ -95,41 +112,40 @@
     </main>
 
     <footer>
-		<nav>
-            <ul>
-                <li>
-					<!-- on click open nav met h3=label-name -->
-					<!-- make style h3 opacity: 100% or color: black on hover & active -->
-                    <h3><a>Bestellen en informatie</a></h3>
-                </li>
-                <li>
-                    <h3><a>Services</a></h3>
-                </li>
-                <li>
-                    <h3><a>Account</a></h3>
-					<ul>
-						<!-- make style: underline on hover -->
-						<li><a>Je Apple ID beheren</a></li>
-						<li><a>Apple Store-account</a></li>
-						<li><a>iCloud.com</a></li>
-					</ul>
-                </li>
-                <li>
-                    <h3><a>Apple Store</a></h3>
-                </li>
-                <li>
-					<h3><a>Voor bedrijven</a></h3>
-                </li>
-                <li>
-					<h3><a>Voor het onderwijs</a></h3>
-					<ul>
-						<!-- make style: underline on hover -->
-						<li><a>Apple en het onderwijs</a></li>
-						<li><a>Aankopen voor je studie</a></li>
-					</ul>
-                </li>
-            </ul>
-        </nav>
+		<details>
+			<summary>Bestellen en informatie</summary>
+		</details>
+		<details>
+			<summary>Services</summary>
+		</details>
+		<details>
+			<summary>Account</summary>
+				<ol>
+					<li><a>Je Apple ID beheren</a></li>
+					<li><a>Apple Store-account</a></li>
+					<li><a>iCloud.com</a></li>
+				</ol>
+		</details>
+		<details>
+			<summary>Apple Store</summary>
+		</details>
+		<details>
+			<summary>Voor bedrijven</summary>
+		</details>
+		<details>
+			<summary>Voor het onderwijs</summary>
+			<p><a>Apple en het onderwijs</a></p>
+			<p><a>Aankopen voor je studie</a></p>
+		</details>
+		<details>
+			<summary>Voor de gezondheidszorg</summary>
+		</details>
+		<details>
+			<summary>Waarden van Apple</summary>
+		</details>
+		<details>
+			<summary>Over Apple</summary>
+		</details>
 		<section>
 			<p>Andere manieren om te shoppen: Zoek een Apple Store of andere winkel bij jou in de buurt. Of bel 0800 0200 570.</p>
 			<p>Nederland</p> 

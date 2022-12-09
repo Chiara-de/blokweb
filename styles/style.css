@@ -31,8 +31,6 @@ button, summary {
 /****************/
 
 /* jouw code */
-
-
 /****************/
 /* global css styling */
 /****************/
@@ -43,45 +41,31 @@ body {
 	font-style: normal;
 }
 
-/*     !CHEATCODE! from Apple.inc inspect
-li { 							
-	box-sizing: border-box;
-    display: inline-block;
-    position: relative;
-    height: 44px;
-    z-index: 1;
-    vertical-align: top; 
-	*/
-	
-	/*   my code
-	padding: 0 1em; 
-} 
-*/
-
 h1, h2, h3, h4, p, a {
 	margin: 0%;
-	padding: 2px 0;
 }
 
 a {
 	text-decoration: none;
 	color: #0066cc;
-	/* color: #0066cc    - op background wit */
 }
 
 h1, h2 {
 	font-weight: 600;
 	font-size: 32px;
+	padding: 0;
 }
 
 h3 {
 	font-weight: 300;
 	font-size: 17px;
+	padding: 0;
 }
 
 h4 {
 	font-weight: 300;
 	font-size: 17px;
+	padding-top: 10px;
 }
 
 footer {
@@ -95,7 +79,10 @@ footer {
 	font-size: 12px;
 }
 
-@media only screen and (min-width: 734px) {
+
+/* ********** NIET MEER RESPONSIVE *********** */
+/* ****************************** */
+/* @media only screen and (min-width: 734px) {
 	h2 {
 		font-weight: 600;
 		font-size: 54px;
@@ -110,7 +97,7 @@ footer {
 		font-weight: 300;
 		font-size: 21px;
 	}
-}
+} */
 
 
 /* **********  DIT IS DE HEADER *********** */
@@ -121,9 +108,9 @@ header {
 	/* on hover color: white; */
 	color: #f5f5f7;
 	width: 100%;
-	padding: 0px 10px;
+	padding-left: 10px;
+	height: 3em;
 
-	min-height: 4em;  /* BORROWED CODE*/
 	line-height: 1; /* BORROWED CODE*/
 	display:flex;
 	flex-direction: row;
@@ -137,6 +124,12 @@ header a {
 	padding: .5em 0;
 	color: #fff;
 	text-decoration: none;
+}
+
+/* alle links in de header die een icon foto zijn*/
+header a img {
+	width: 50px;
+	height: 50px;
 }
   
 /* !BORROWED CODE! */
@@ -175,12 +168,12 @@ nav button {
 /* HET MENU */	/* !BORROWED CODE! */
 /************/
 header nav {
-	padding: 1em; /* !BORROWED CODE! */
+	padding: 1em .7em; /* !BORROWED CODE! */
 	background-color: #000;
 	
 	display: grid;	/* !BORROWED CODE! */
 	align-content: start;	/* !BORROWED CODE! */
-	gap: 1em;	/* !BORROWED CODE! */
+	gap: .4em;	/* !BORROWED CODE! */
 	
 	position: fixed;	/* !BORROWED CODE! */
 	left: 0;	/* !BORROWED CODE! */
@@ -211,23 +204,25 @@ header nav ul {
 }
 
 header nav ul li {
-	padding: .3em 0;
+	padding: .7em 0;
 	color: #6e6e73;
-}
-
-hr {
-	width: 100%;
-	color: #464648;
+	border-bottom: .9px solid;
+	border-color: #464648;
 }
 
 header nav a:first-of-type img {
 	width: 100%;
 	height: auto;
 	padding: 0px;
+	border-bottom: 1px solid;
+	border-color: #464648;
 }
 
+
+/* ********** NIET MEER RESPONSIVE *********** */
+/* ****************************** */
 /* Met deze code zal de navigatie op grote scherm horizontaal geplaatst worden */
-@media only screen and (min-width: 734px) {
+/* @media only screen and (min-width: 734px) {
 	header nav ul {
 		margin: 0;
 		height: 44px;
@@ -241,7 +236,7 @@ header nav a:first-of-type img {
 		position:sticky;
 		top:0;
 	}
-} 
+}  */
 
 
 
@@ -251,12 +246,15 @@ header nav a:first-of-type img {
 /****************/
 /* index page css styling */
 /****************/
-
+main section article img{
+	width: 100%;
+	height: auto;
+}
 
 /* **************** DIT IS SECTION 1 ************** */
 /* ****************************** */
 section:nth-child(1) article {
-	padding: 0 1em;
+	padding: 0 .7em;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -264,14 +262,15 @@ section:nth-child(1) article {
 	flex-direction: column;
 	flex-wrap: wrap;
 }
+
 section:nth-child(1) article:nth-child(1){
 	background-color: #fbfbfd; 
-	padding-top: 32px;
+	padding-top: 28px;
 }
 section:nth-child(1) article:nth-child(2) {
 	background-color: #000; 
 	color: #fff;
-	padding-top: 32px;
+	padding-top: 28px;
 	/* <a> font size in artikel: 17px */
 	/* <a> color: #2997ff    - op background zwart */
 }
@@ -283,7 +282,11 @@ section:nth-child(1) article:nth-child(3) {
 	/* color: #2997ff    - op background zwart */
 }
 
-/* main section:nth-child(2) > article { */
+section:nth-child(1) article:nth-child(3) img {
+	width: auto;
+	height:  35vh;
+}
+
 
 
 
@@ -303,23 +306,16 @@ main section:nth-child(2) {
 	justify-content: center; 
 }
 
-@media only screen and (min-width: 734px) {
+/* ****** NIET MEER RESPONSIVE
+/* ********************************** */
+/* @media only screen and (min-width: 734px) {
 	main section:nth-child(2) {
 		grid-template-columns: repeat(2, 1fr);
 	}
-}
+} */
 
 section:nth-child(2) article{
 	padding-top: 2em;
-}
-
-main section > ul {
-	width: 100%;
-	height: auto;
-	padding: 3em;
-	display: flex;
-	text-align: center;
-	justify-content: center; 
 }
 
 section:nth-child(2) article:nth-child(even) {
@@ -332,44 +328,73 @@ section:nth-child(2) article:nth-child(even) {
 	flex-wrap: wrap;
 }
 
-main section article img {
-	width: 100%;
-	max-height: auto;
-}
-
-/* specifiek de titel van apple watch in artikel 3*/
-main section article:nth-child(3) img:first-of-type {
+/* specifiek de titel van apple watch in artikel 3 */
+main section:nth-child(2) article:nth-child(3) img:first-of-type {
 	width: 105px;
 	max-height: 85px;
 }
 
-@media only screen and (min-width: 734px) {
-	/* specifiek de titel van apple watch in artikel 3*/
+main section > ul {
+	width: 100%;
+	height: auto;
+	padding: 3em;
+	display: flex;
+	text-align: center;
+	justify-content: center; 
+}
+
+
+/*  ***** NIET MEER RESPONSIVE
+/* ********************************** */
+/* @media only screen and (min-width: 734px) {
+	/* specifiek de titel van apple watch in artikel 3
 	main section article:nth-child(3) img:first-of-type {
 		width: 120px;
 		max-height: 110px;
 	}
-}
+} */
 
 
 
 
 /* **************** DIT IS SECTION 3 ************** */
 /* ****************************** */
-main section:nth-child(3) ul{
+main section:nth-child(3) ul {
 	margin: 0;
 	padding: 8px 0;
-}
 
+	/* BORROWED FROM CLASSMATE */
+	/* specifiek voor de carousel */
+	display:flex;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	/* padding-left: 0; */
+}
 
 main section:nth-child(3) ul > li {
 	list-style: none;
 	padding: 5px;
+
+	/* BORROWED FROM CLASSMATE */
+	/* specifiek voor de carousel */
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column-reverse;
+
+	/* weird start */
+	box-sizing: border-box;
+	width: 100%;
 }
 
 main section:nth-child(3) ul li> img {
-	width: 17rem;
-	height: 100%;
+	/* width: 17rem;
+	height: 100%; */
+
+	/* BORROWED FROM CLASSMATE */
+	/* specifiek voor de carousel */
+	max-width: 12em;
+	padding: .5em;
+	padding-left: 0;
 }
 
 /* 
@@ -378,30 +403,23 @@ main section:nth-child(3) ul li> img {
 } 
 */
 
-/* main section > nav {
-	background-color: lightgray;
-	color: darkslateblue;
-    padding: 8px 0;
-} */
-
-
 
 
 
 /* **********  DIT IS DE FOOTER *********** */
 /* ****************************** */
 
+footer h3 {
+	font-weight: 400;
+	font-size: 12px;
+	padding: 5px 0;
+}
+
 footer > nav {
 	background-color: #f5f5f7;
 	/* ON HOVER and ACTIVE - color: #1d1d1f */
 	color: #6e6e73;
 	text-align: left;
-}
-
-footer h3 {
-	font-weight: 400;
-	font-size: 12px;
-	padding: 5px 0;
 }
 
 footer > nav > ul {
@@ -418,7 +436,67 @@ footer nav ul li > ul {
 }
 
 
+/* BORROWED CODE FROM MDN DOCS DETAILS */
+details {
+    padding: .5em .5em 0;	/* BORROWED CODE */
+	line-height: 1.4;
+}
 
+summary {	/* BORROWED CODE */
+    /* margin: -.5em -.5em 0; */	/* BORROWED CODE */
+    padding: .5em; /* BORROWED CODE */
+	list-style: none;	/* BORROWED CODE */
+	border-bottom: 1px solid #d2d2d7;
+	/* text-align: left; */
+}
+
+details ol li {
+	list-style: none;
+	padding: 5px 0;
+}
+
+details a {
+	color: #424245;
+	text-decoration: none;
+}
+
+details[open] {	/* BORROWED CODE */
+    padding: .5em;
+	color: #424245;
+	border-bottom: 1px solid #d2d2d7;
+}
+
+details[open] summary {		/* BORROWED CODE */
+    margin-bottom: .5em;	/* BORROWED CODE */
+}
+
+/* details[open] summary > p {
+	padding: .5em;
+    margin-bottom: .5em;
+} */
+
+
+
+footer section{
+	padding: 17px 0;
+}
+
+footer section p:nth-child(1) {
+	margin-bottom: 7px;
+	padding-bottom: 8px;
+}
+
+footer section p:nth-child(2) {
+	padding-bottom: 8px;
+}
+
+footer section p:nth-child(3) {
+	padding-top: 12px;
+}
+
+footer section p:nth-child(4) {
+	margin-top: 5px;
+}
 
 
 /****************/
