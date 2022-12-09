@@ -2,12 +2,9 @@
 console.log("hi");
 
 // COPY PASTE CODE FROM DLO>JS-3STAP-OPDRACHT2
-
 /******************************/
 /* menu openen de MENU button */
 /******************************/
-
-/* JOUW CODE HIER - stap 4 */
 
 // stap 1: zoek de menu-button op en sla die op in een variabele
 var openButton = document.querySelector("header > button");
@@ -29,8 +26,6 @@ function openMenu() {
 /************************************/
 /* menu sluiten met de sluit button */
 /************************************/
-
-/* JOUW CODE HIER - stap 5 */
 
 // stap 1 - zoek sluiten button op
 var sluitButton = document.querySelector("nav button");

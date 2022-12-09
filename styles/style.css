@@ -183,7 +183,6 @@ header nav {
 	
 	transform:translatex(-100%); /* !BORROWED CODE! */
 	transition:transform .3s; /* !BORROWED CODE! */
-	
 }
   
 /* als menu open is */	/* !BORROWED CODE! */
@@ -499,19 +498,301 @@ footer section p:nth-child(4) {
 }
 
 
+
+
+
+
+
 /****************/
 /* services page css styling */
 /****************/
-header nav:nth-of-type(2) {
+
+
+/* **********  DIT IS DE LOCAL NAVIGATION *********** */
+/* ****************************** */
+body nav {
 	background-color: lightgray;
 	color: darkslateblue;
     padding: 8px 0;
+	height: 100%;
 }
 
-header nav ul li img {
+body nav ul {
+	margin: 0; 
+	padding: 0 2em;
+	list-style: none;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+body nav ul li {
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+  	gap:.25em;
+}
+
+body nav ul li img {
 	width: 50px;
 	height: 50px;
 }
 
+/* **********  DIT IS DE 1ste SECTION *********** */
+/* ****************************** */
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors */
+/* All <li> elements with a class list that includes both "spacious" and "elegant" */
+/* For example, class="elegant retro spacious" */
+main.services section:nth-child(1) {
+	padding: 55px 0px 65px 0px;
+	text-align: center;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+
+	/* BORROWED CODE FROM APPLE.INC INSPECT */
+	/* 
+	transition-delay: 2s;
+	transition: transform 1s cubic-bezier(0.5,1,0.89,1),opacity .6s cubic-bezier(0.5,1,0.89,1);
+    transform: translateY(0);
+    opacity: .999;
+	*/
+}
+
+main.services section:nth-child(1) > h1 {
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+main.services section:nth-child(1) > h3 {
+	color: #86868b;	/* BORROWED CODE */
+	width: 87.5%;	/* BORROWED CODE */
+	margin-top: 18px; 	/* no effect? */
+
+	font-size: 18px;
+	font-weight: 400;
+}
 
 
+
+
+
+
+/* **********  DIT IS DE 2de SECTION *********** */
+/* ****************************** */
+
+main.services section:nth-child(2) {
+	background-color: #000;
+	color: #fff;
+	height: 288px;
+
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main.services section:nth-child(2) > h3 {
+	font-size: 21px;
+	font-weight: 500;
+}
+
+main.services section:nth-child(2) button{
+	min-width: 28px;
+    padding: 8px 16px;
+    border-radius: 980px;
+	border: 1px solid #fff;
+	background-color: initial;
+
+	font-family: sofia-pro,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #fff;
+	font-size: 18px;
+}
+
+
+
+
+
+
+/* **********  DIT IS DE 3de SECTION *********** */
+/* ****************************** */
+
+/* BORROWED CODE FROM CLASSMATE */
+/* 
+header {
+	background-color:rgba(27,31,79,.3);
+	height: 95vh;
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+}
+
+header video {
+	position: absolute; 
+	padding-top: 3.5em;
+	z-index: -1;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: black;
+}
+*/
+
+main.services section:nth-child(3) {
+	padding-bottom: 130px;
+}
+
+main.services section:nth-child(3) video {
+	height: 100%;
+	width: 100%;
+
+	z-index: -1;
+}
+
+main.services section:nth-child(3) ul {
+	display:flex;
+	overflow-x:auto;
+	-webkit-overflow-scrolling: touch;
+	padding-left: 0;
+}
+  
+main.services section:nth-child(3) ul li {
+	align-items:flex-start;
+	display:flex;
+	flex-direction: column;
+
+	font-family: sofia-pro,sans-serif;
+	font-size: 12px;
+	list-style: none;	
+}
+
+main.services section:nth-child(3) ul li img{
+	max-width: 15em;
+	padding: .5em;
+	padding-left: 0;
+	border-radius: 12px;
+}
+
+
+
+
+
+
+
+/* **********  DIT IS DE 4de SECTION *********** */
+/* ****************************** */
+main.services section:nth-child(4) {
+	padding-bottom: 130px;
+}
+
+main.services section:nth-child(4) video {
+	height: 100%;
+	width: 100%;
+
+	z-index: -1;
+}
+
+main.services section:nth-child(4) ul {
+	display:flex;
+	overflow-x:auto;
+	-webkit-overflow-scrolling: touch;
+	padding-left: 0;
+}
+
+main.services section:nth-child(4) ul li {
+	align-items:flex-start;
+	display:flex;
+	flex-direction: column;
+
+	font-family: sofia-pro,sans-serif;
+	font-size: 12px;
+	list-style: none;	
+}
+
+main.services section:nth-child(4) ul li img{
+	max-width: 12em;
+	padding: .5em;
+	padding-left: 0;
+	border-radius: 10px;
+}
+
+
+
+
+/* **********  DIT IS DE 5de SECTION *********** */
+/* ****************************** */
+main.services section:nth-child(5) {
+	padding-bottom: 130px;
+}
+
+main.services section:nth-child(5) video {
+	height: 100%;
+	width: 100%;
+
+	z-index: -1;
+}
+
+main.services section:nth-child(5) ul {
+	display:flex;
+	overflow-x:auto;
+	-webkit-overflow-scrolling: touch;
+	padding-left: 0;
+}
+
+main.services section:nth-child(5) ul li {
+	align-items:flex-start;
+	display:flex;
+	flex-direction: column;
+
+	font-family: sofia-pro,sans-serif;
+	font-size: 12px;
+	list-style: none;	
+}
+
+main.services section:nth-child(5) ul li img{
+	max-width: 15em;
+	padding: .5em;
+	padding-left: 0;
+	border-radius: 12px;
+}
+
+
+
+
+/* **********  DIT IS DE 6de SECTION *********** */
+/* ****************************** */
+
+main.services section:nth-child(6) {
+	background-color: #f5f5f7;
+	height: 288px;
+
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main.services section:nth-child(6) > h3 {
+	font-size: 21px;
+	font-weight: 500;
+}
+
+main.services section:nth-child(6) button{
+	min-width: 28px;
+    padding: 8px 16px;
+    border-radius: 980px;
+	border: 1px solid #000;
+	background-color: #000;
+
+	font-family: sofia-pro,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #fff;
+	font-size: 18px;
+}

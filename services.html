@@ -72,42 +72,112 @@
     </header>
     
     <nav>
-            <ul>
-                <li>
-                    <img src="images/favicon.svg" alt="testing images in nav">
-                    <a href="pageDoesNotExist">Apple TV&#43;</a>
-                </li>
-                <li>
-                    <img src="images/favicon.svg" alt="testing images in nav">
-                    <a href="pageDoesNotExist">Apple Music</a>
-                </li>
-                <li>
-                    <img src="images/favicon.svg" alt="testing images in nav">
-                    <a href="pageDoesNotExist">Apple Arcade</a>
-                </li>
-                <li>
-                    <img src="images/favicon.svg" alt="testing images in nav">
-                    <a href="pageDoesNotExist">iCloud</a>
-                </li>
-                <li>
-                    <img src="images/favicon.svg" alt="testing images in nav">
-                    <a href="pageDoesNotExist">Apple Pay</a>
-                </li>
-            </ul>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
+            <ol> 
+                <figure>
+                    <img src="favicon-192x192.png" alt="The beautiful MDN logo." />
+                    <figcaption>MDN Logo</figcaption>
+                </figure>
+            </ol>
+         -->
+        <ul>
+            <li>
+                <img src="images/localNAV/Apple-Services-LocalNav01.svg" alt="local navigation">
+                <a href="#">Apple TV&#43;</a>
+            </li>
+            <li>
+                <img src="images/localNAV/Apple-services-LocalNav02.svg" alt="local navigation">
+                <a href="#">Apple Music</a>
+            </li>
+            <li>
+                <img src="images/localNAV/Apple-Services-LocalNav03.svg" alt="local navigation">
+                <a href="#">Apple Arcade</a>
+            </li>
+            <li>
+                <img src="images/localNAV/Apple-Services-LocalNav04.svg" alt="local navigation">
+                <a href="#">iCloud</a>
+            </li>
+            <li>
+                <img src="images/localNAV/Apple-Services-LocalNav05.svg" alt="local navigation">
+                <a href="#">Apple Pay</a>
+            </li>
+        </ul>
     </nav>
     
-    <main>
+    <main class="services">
         <section>
            <h1>Alleen het beste.<br> Alleen bij Apple.</h1> 
            <h3>Geniet van alles wat je leuk en interessant vindt, op al je favoriete devices. Bekroonde films en series, geweldige muziek in ruimtelijke audio, superleuke games en handige manieren om te betalen. Ontdek de meest vooruitstrevende, relevante, kwalitatieve content. Alleen bij Apple.</h3>
         </section>
         <section>
-            <!-- logo apple one-->
-            <h4>Bundel vier Apple services en geniet meer voor minder.</h4>
+            <img src="images-servicesPage/Apple-services48.jpg" alt="Apple one">
+            <h3>Bundel vier Apple services en geniet meer voor minder.</h3>
             <button type="button"> Meer informatie</button>
         </section>
+        <section> 
+            <!-- Films section -->
+            <!-- BORROWED -->
+            <video autoplay muted loop><source src="videos/films.mp4"></video>
+            <!-- CAROUSEL MET AUTOMATED SLIDER -->
+            <ul>
+				<li><img src="images-servicesPage/Films/apple-services-film01.jpg" alt="film 1">Film Title & genre</li>
+				<li><img src="images-servicesPage/Films/apple-services-film02.jpg" alt="">Film Title & genre</li>
+				<li><img src="images-servicesPage/Films/apple-services-film03.jpg" alt="">Film Title & genre</li>
+				<li><img src="images-servicesPage/Films/apple-services-film04.jpg" alt="">Film Title & genre</li>
+				<li><img src="images-servicesPage/Films/apple-services-film05.jpg" alt="">Film Title & genre</li>
+                <li><img src="images-servicesPage/Films/apple-services-film06.jpg" alt="film 6">Film Title & genre</li>
+				<li><img src="images-servicesPage/Films/apple-services-film07.jpg" alt="">Film Title & genre</li>
+				<li><img src="images-servicesPage/Films/apple-services-film08.jpg" alt="">Film Title & genre</li>
+				<li><img src="images-servicesPage/Films/apple-services-film09.jpg" alt="">Film Title & genre</li>
+				<li><img src="images-servicesPage/Films/apple-services-film10.jpg" alt="">Film Title & genre</li>
+                <li><img src="images-servicesPage/Films/apple-services-film11.jpg" alt="">Film Title & genre</li>
+				<li><img src="images-servicesPage/Films/apple-services-film12.jpg" alt="">Film Title & genre</li>
+			</ul>
+        </section>
         <section>
-            <!-- lots  of interactions-->
+            <!-- Music section -->
+            <video autoplay muted loop><source src="videos/music.mp4"></video>
+            <!-- CAROUSEL MET AUTOMATED SLIDER -->
+            <ul>
+				<li><img src="images-servicesPage/Music/apple-services-music01.jpg" alt="Song 1">Song Title & genre</li>
+				<li><img src="images-servicesPage/Music/apple-services-music02.jpg" alt="">Song Title & genre</li>
+				<li><img src="images-servicesPage/Music/apple-services-music03.jpg" alt="">Song Title & genre</li>
+				<li><img src="images-servicesPage/Music/apple-services-music04.jpg" alt="">Song Title & genre</li>
+				<li><img src="images-servicesPage/Music/apple-services-music05.jpg" alt="">Song Title & genre</li>
+                <li><img src="images-servicesPage/Music/apple-services-music06.jpg" alt="Song 6">Film Title & genre</li>
+				<li><img src="images-servicesPage/Music/apple-services-music07.jpg" alt="">Song Title & genre</li>
+				<li><img src="images-servicesPage/Music/apple-services-music08.jpg" alt="">Song Title & genre</li>
+				<li><img src="images-servicesPage/Music/apple-services-music09.jpg" alt="">Song Title & genre</li>
+				<li><img src="images-servicesPage/Music/apple-services-music10.jpg" alt="">Song Title & genre</li>
+                <li><img src="images-servicesPage/Music/apple-services-music11.jpg" alt="">Song Title & genre</li>
+				<li><img src="images-servicesPage/Music/apple-services-music12.jpg" alt="">Song Title & genre</li>
+			</ul>
+        </section>
+        <section>
+            <!-- Games section -->
+            <video autoplay muted loop><source src="videos/games.mp4"></video>
+            <!-- CAROUSEL MET AUTOMATED SLIDER -->
+            <ul>
+				<li><img src="images-servicesPage/Games/apple-services-games01.jpg" alt="game 1">game Title & genre</li>
+				<li><img src="images-servicesPage/Games/apple-services-games02.jpg" alt="">game Title & genre</li>
+				<li><img src="images-servicesPage/Games/apple-services-games03.jpg" alt="">game Title & genre</li>
+				<li><img src="images-servicesPage/Games/apple-services-games04.jpg" alt="">game Title & genre</li>
+				<li><img src="images-servicesPage/Games/apple-services-games05.jpg" alt="">game Title & genre</li>
+                <li><img src="images-servicesPage/Games/apple-services-games06.jpg" alt="game 6">game Title & genre</li>
+				<li><img src="images-servicesPage/Games/apple-services-games07.jpg" alt="">game Title & genre</li>
+				<li><img src="images-servicesPage/Games/apple-services-games08.jpg" alt="">game Title & genre</li>
+				<li><img src="images-servicesPage/Games/apple-services-games09.jpg" alt="">game Title & genre</li>
+				<li><img src="images-servicesPage/Games/apple-services-games10.jpg" alt="">game Title & genre</li>
+                <li><img src="images-servicesPage/Games/apple-services-games11.jpg" alt="">game Title & genre</li>
+				<li><img src="images-servicesPage/Games/apple-services-games12.jpg" alt="">game Title & genre</li>
+			</ul>
+        </section>
+        <section>
+            <img src="images-servicesPage/Apple-services48.jpg" alt="Apple one">
+            <h3>Bundel vier Apple services en geniet meer voor minder.</h3>
+            <button type="button">Probeer het gratis uit</button>
+            <a href="">Meer informatie &gt;</a>
+            <img src="images-servicesPage/Apple-services49.png" alt="Apple software applications">
         </section>
     </main>
 
