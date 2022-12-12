@@ -99,13 +99,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-home-top.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-home-footer.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/breakdown-home-dynamisch-menu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -203,15 +201,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Knoppen zijn redelijk klein en ongemakkelijk te gebruiken bij de beperking motoriek.
+  
+  Dit kan opgelost worden door de knoppen wat groter te maken.
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Doordat Apple zelf een hoog constrast in hun styling gebruikt (zwart-wit vormgeving), is dark mode hetzelfde als light mode. 
+  Voor mensen die moeite hebben met het wit-licht kan dit als een irritatie ervaren worden.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Dit zou opgelost kunnen worden met een algemene dark-mode waarbij alles in de achtergrond zwart is,
 
 </details>
 
@@ -239,12 +238,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Hyperlinks hoeven niet allemaal te kloppen of een link hebben voor deze opdracht.
+  - Detailed list ziet er gewoon prima uit.
+  - Selecteerd de meest belangrijke onderdelen om mee verder te werken.
 
 </details>
 
@@ -258,19 +255,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/final-image1.jpg" width="375px" alt="mijn website versie 1">
+  <img src="readme-images/final-image2.jpg" width="375px" alt="mijn website versie 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  De hamburger menu en werken met de css met selectors (mostly).
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/final-made1.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het plaatsen van de section op de video, en de poster-list items op de home pagina
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/final-missed1.jpg" width="375px" alt="bummer">
+  <img src="readme-images/final-missed2.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -287,7 +286,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. DLO JS-3Stap Opdracht 2 - voor de hamburger menu - (https://codepen.io/shooft/pen/GRxXboQ)
   2. MDN web docs - voor CSS uitleg (https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)
   3. MDN web docs - voor HTML element uitleg (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
-  4. 
-  5. 
+  4. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+  5. https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
+  6. https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+  7. https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
 </details>
