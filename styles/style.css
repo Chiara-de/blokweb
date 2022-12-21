@@ -70,7 +70,6 @@ h4 {
 
 footer {
 	background-color: #f5f5f7;
-	/* ON HOVER and ACTIVE - color: #1d1d1f */
 	color: #6e6e73;
 	text-align: left;
 	padding: 2em 1em;
@@ -557,7 +556,7 @@ main.services section:nth-child(1) {
     justify-content: center;
 }
 
-main.services section:nth-child(1) h1, h2 {
+main.services section:nth-child(1) h1, main.services section:nth-child(1) h2 {
 	/* font styling */
 	font-size: 45px;
     font-weight: 600;
@@ -607,18 +606,24 @@ Apple gebruikt veel div's binnen sections wat het soms lastig maakt om
 zelf alles te selecteren binnen de section. Dus nu een poging om alles samen
 te selecteren met een CSS code.
 */
-main.services section:nth-child(2) > img, h3 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 87.5%;
-}
-
 main.services section:nth-child(2) > img {
 	/* BORROWED */
 	height: 35px;
     width: 111px;
-    margin-top: 6px;
+
+	margin-top: 6px;
+	margin-right: auto;
 	margin-bottom: 12px;
+	margin-left: auto;
+
+	/* BORROWED */
+	transition: all 0.9s ease;
+    
+	/* to set the dimensions of the image and hide it
+	position: relative;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	*/
 }
 
 main.services section:nth-child(2) > h3 {
@@ -626,6 +631,10 @@ main.services section:nth-child(2) > h3 {
 	font-weight: 500;
 	line-height: 1.09; 	/* BORROWED */
 	margin-bottom: 30px;	/* BORROWED */
+
+	width: 87.5%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 main.services section:nth-child(2) button{
