@@ -85,44 +85,8 @@ function updateImage() {
     }, 1100);
 }
 
-// BORROWED
-// var intervalID = setInterval(updateImage, 1100);
-
 // stap 5: begin de animatie op het moment dat de pagina word geladen
 window.addEventListener('load', () => {
   updateImage();
 });
 
-
-// function showImage(index) {
-//   slider.src = images[index];
-//   currentIndex = index;
-// }
-
-// stap 5: voeg in de functie een loop toe stopt na 2 iteraties
-// function startLoop() {
-//   setTimeout(() => {
-//     showImage((currentIndex + 1) % images.length);
-//     loopCount++;
-//     if (loopCount < 10) {
-//       startLoop();
-//     }
-//   }, 2000);
-// }
-
-// setInterval(() => {
-//   showImage((currentIndex + 1) % images.length);
-// }, 2000);
-
-// // stap : laat de foto's wachten tot de pagina is geladen en voer dan de functie uit
-// slider.addEventListener('load', () => {
-//   slider.style.opacity = 1;
-//   startLoop();
-// });
-
-
-// Start the loop when the page is loaded
-// window.addEventListener('load', () => {
-//   slider.style.opacity = 1;
-//   startLoop();
-// });
