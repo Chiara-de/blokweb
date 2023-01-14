@@ -27,13 +27,16 @@
 
 		<!-- ------ !BORROWED CODE!    code uit opdracht DLO > JS-3step opdracht 2 --------- -->
 		<!-- de open button -->
-		<button><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
+		<!-- de button is niet relevant voor screenreaders -->
+		<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
 			
 		<!--  het menu -->
         <nav>
 			<!-- ------ !BORROWED CODE!    code uit opdracht DLO > JS-3step opdracht 2 --------- -->
 			<!-- de sluit button -->
-			<button><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
+			<!-- de button is ook niet relevant voor screenreaders -->
+			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
 			<!-- Zoekbalk foto -->
 			<a href=""><img src="images/localNAV/apple-navglobal-mobile-search.png" alt=""></a>
             <ul>
@@ -139,74 +142,63 @@
 			<ul>
 				<li>
 					<img src="images/homePage/Apple-Home-Imagery-Mobile.jpg" alt="image in carousel">
-					<!-- 
-					<p>Documantaire</p>
-					<p>Iedere ademhaling is vooruitgang.</p>
-					<button type="button">Stream nu</button>
-					-->
+					<div class="container-poster-title">
+						<!-- <img src="images/homePage/AppleTVplus-icon1.png" alt=""> -->
+						<img src="images/homePage/Apple-Home-Imagery-Mobile10.png" alt=""> 
+					</div>
+					<div class="container-poster-details">
+						<p>Documantaire</p>
+						<p>Iedere ademhaling is vooruitgang.</p>
+						<button type="button">Stream nu</button>
+					</div>
 				</li>
 				<li>
-					<!-- 
-					<section>
-						<img src="images/homePage/Apple-Home-Imagery-Mobile04.png" alt="">
-					</section>
-					-->
 					<img src="images/homePage/Apple-Home-Imagery-Mobile03.jpg" alt="image in carousel">
-					<!--
-					<section>
+					<div class="container-poster-title">
+						<!-- <img src="images/homePage/AppleTVplus-icon1.png" alt=""> -->
+						<img src="images/homePage/Apple-Home-Imagery-Mobile04.png" alt="">
+					</div>
+					<div class="container-poster-details">
 						<p>Thriller</p>
-						<p>Nadat een jonge wetenschapper wordt vermist, gaan haar man en broer op zoek.</p>
+						<p>De redding is nogmaar het begin.</p>
 						<button type="button">Stream nu</button>
-					</section>
-					-->
+					</div>
 				</li>
 				<li>
-					<!-- 
-					<section>
-						logo apple tv plus
-						<img src="images/homePage/Apple-Home-Imagery-Mobile06.png" alt="">
-					</section>
-					-->
 					<img src="images/homePage/Apple-Home-Imagery-Mobile05.jpg" alt="image in carousel">
-					<!-- 
-					<section>
+					<div class="container-poster-title">
+						<!-- <img src="images/homePage/AppleTVplus-icon1.png" alt=""> -->
+						<img src="images/homePage/Apple-Home-Imagery-Mobile06.png" alt="">
+					</div>
+					<div class="container-poster-details">
 						<p>Komedie</p>
-						<p>Luid de feesttdagen in met een knaller.</p>
+						<p>Luid de feestdagen in met een knaller.</p>
 						<button type="button">Stream nu</button>
-					</section>
-					 -->
+					</div>
 				</li>
 				<li>
-					<!-- 
-					<section>
-						logo apple tv plus 
-						<img src="images/homePage/Apple-Home-Imagery-Mobile08.png" alt="">
-					</section>
-					-->
 					<img src="images/homePage/Apple-Home-Imagery-Mobile07.jpg" alt="image in carousel">
-					<!--
-					<section>
+					<div class="container-poster-title">
+						<!-- <img src="images/homePage/AppleTVplus-icon1.png" alt=""> -->
+						<img src="images/homePage/Apple-Home-Imagery-Mobile08.png" alt="">
+					</div>
+					<div class="container-poster-details">
 						<p>Drama</p>
 						<p>Welkom in Bombay.</p>
 						<button type="button">Stream nu</button>
-					</section>
-					-->
+					</div>
 				</li>
 				<li>
-					<!-- 
-					<section>
-						logo apple tv plus
-						<img src="images/homePage/Apple-Home-Imagery-Mobile12.png" alt="">
-					</section> 
-					-->
 					<img src="images/homePage/Apple-Home-Imagery-Mobile11.jpg" alt="image in carousel">
-					<!-- 
-					<section>
+					<div class="container-poster-title">
+						<!-- <img src="images/homePage/AppleTVplus-icon1.png" alt=""> -->
+						<img src="images/homePage/Apple-Home-Imagery-Mobile12.png" alt="">
+					</div>
+					<div class="container-poster-details">
 						<p>Komedie</p>
-						<p>Winnaar van 4 Emmy's &reg;, waaronder de Beste komedieserie.</p>
+						<p>Winnaar van 4 Emmy's &reg;</p>
 						<button type="button">Stream nu</button>
-					</section> 
-					-->
+					</div>
 				</li>
 			</ul>
         </section>
