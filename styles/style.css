@@ -219,18 +219,18 @@ header nav a:first-of-type img {
 /****************/
 /* index page css styling */
 /****************/
-main section {
+main > section {
 	background-color: #fff;
 }
 
-main section article img{
+main > section article img{
 	width: 100%;
 	height: auto;
 }
 
 /* **************** DIT IS SECTION 1 ************** */
 /* ****************************** */
-section:nth-child(1) article {
+main > section:nth-child(1) article {
 	padding: 0 .7em;
 	display: flex;
 	align-items: center;
@@ -240,24 +240,24 @@ section:nth-child(1) article {
 	flex-wrap: wrap;
 }
 
-section:nth-child(1) article:nth-child(1){
+main > section:nth-child(1) article:nth-child(1){
 	background-color: #fbfbfd; 
 	padding-top: 28px;
 }
 
-section:nth-child(1) article:nth-child(2) {
+main > section:nth-child(1) article:nth-child(2) {
 	background-color: #000; 
 	color: #fff;
 	padding-top: 28px;
 }
 
-section:nth-child(1) article:nth-child(3) {
+main > section:nth-child(1) article:nth-child(3) {
 	background-color: #010127; 
 	color: #f5f5f7;
 	padding-bottom: 42px;
 }
 
-section:nth-child(1) article:nth-child(3) img {
+main > section:nth-child(1) article:nth-child(3) img {
 	width: auto;
 	height:  35vh;
 }
@@ -269,7 +269,7 @@ section:nth-child(1) article:nth-child(3) img {
 
 /* **************** DIT IS SECTION 2 ************** */
 /* ****************************** */
-main section:nth-child(2) {
+main>section:nth-child(2) {
 	background-color: #FBFBFD;
 
 	align-items: center;
@@ -281,11 +281,11 @@ main section:nth-child(2) {
 	justify-content: center; 
 }
 
-section:nth-child(2) article{
+main>section:nth-child(2) article{
 	padding-top: 2em;
 }
 
-section:nth-child(2) article:nth-child(even) {
+main>section:nth-child(2) article:nth-child(even) {
 	background-color: #000; 
 	color: #fff;
 	display: flex;
@@ -296,12 +296,12 @@ section:nth-child(2) article:nth-child(even) {
 }
 
 /* specifiek de titel van apple watch in artikel 3 */
-main section:nth-child(2) article:nth-child(3) img:first-of-type {
+main>section:nth-child(2) article:nth-child(3) img:first-of-type {
 	width: 105px;
 	max-height: 85px;
 }
 
-main section:nth-child(2) > ul {
+main>section:nth-child(2) > ul {
 	width: 100%;
 	height: auto;
 	padding: 3em;
@@ -311,12 +311,12 @@ main section:nth-child(2) > ul {
 }
 
 /* mini foto van de Apple M2 achter de h3 */
-section:nth-child(2) article:nth-child(4) h3 {
+main>section:nth-child(2) article:nth-child(4) h3 {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
 }
-section:nth-child(2) article:nth-child(4) h3 > img {
+main>section:nth-child(2) article:nth-child(4) h3 > img {
 	width: auto;
 	height: 2em;
 }
@@ -327,7 +327,7 @@ section:nth-child(2) article:nth-child(4) h3 > img {
 
 /* **************** DIT IS SECTION 3 ************** */
 /* ****************************** */
-main section:nth-child(3) ul {
+main>section:nth-child(3) ul {
 	margin: 0;
 	padding: 8px 0;
 
@@ -337,7 +337,6 @@ main section:nth-child(3) ul {
 	justify-content: flex-start;
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
-	/* padding-left: 0; */
 }
 
 /* BORROWED FROM https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
@@ -346,53 +345,96 @@ main section:nth-child(3) ul {
 	display: none;
 }
 
-main section:nth-child(3) ul > li {
+main>section:nth-child(3) ul > li {
 	list-style: none;
 	padding: 5px;
-
-	/* BORROWED FROM CLASSMATE */
-	/* voor het posisioneren van de tekst en knoppen op de individuele list items */
-	align-items: flex-start;
-	display: flex;
-	flex-direction: column-reverse;
-
-	/* working with layering */
-	z-index: 1;
-}
-
-main section:nth-child(3) ul li > img {
-	/* width: 17rem;
-	height: 100%; */
+	position: relative;
+	width: 100vw;
 
 	/* BORROWED FROM CLASSMATE */
 	/* specifiek voor de carousel */
-	max-width: 17em;
+	align-items: flex-start;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+main>section:nth-child(3)>ul > li > img {
+	/* BORROWED FROM CLASSMATE */
+	/* specifiek voor de carousel */
+	max-width: 20em;
 	padding: .5em;
 	padding-left: 0;
 }
 
-/* working with layering */
-main section:nth-child(3) ul li section {
+main>section:nth-child(3)>ul > li > .container-poster-title {
 	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+    z-index: 1;
+    top: 60px;
+    left: 15%;
 
-	align-items: flex-start;
-	display: flex;
-
-	/* tekst en foto boven de poster foto
-	z-index: 3; */
-}
-
-main section:nth-child(3) ul li section img {
 	width: 100%;
-	height: 10em;
-	/* padding: .5em;
-	padding-left: 0; */
 }
 
+main>section:nth-child(3)>ul > li > .container-poster-title img {
+	width: 220px;
+	height: auto;
+}
+
+main>section:nth-child(3)>ul > li > .container-poster-details {
+	position: absolute;
+    z-index: 1;
+    bottom: 25px;
+    left: 0;
+
+	width: 100%;
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	color: #fff;
+}
+
+main>section:nth-child(3)>ul > li > .container-poster-details p:first-of-type{
+	font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+    font-size: 16px;
+}
+
+main>section:nth-child(3)>ul > li > .container-poster-details p:last-of-type{
+	font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    font-size: 16px;
+	
+	margin-bottom: 15px;
+}
+
+main>section:nth-child(3)>ul > li > .container-poster-details button{
+	cursor: pointer;    /* BORROWED */
+    text-align: center;     /* De text wilt niet centreren */
+    white-space: nowrap;    /* BORROWED */
+
+    margin-bottom: 14px;
+    
+    /* shaping the button */
+    min-width: 28px;     /* BORROWED */
+    padding: 12px 21px;
+    border-radius: 980px;    /* BORROWED */
+    border: 1px solid #f5f5f7;
+    background-color: #f5f5f7;
+
+    /* font styling within the button borders */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
 
 
 
@@ -498,7 +540,7 @@ body nav.services {
     overflow: hidden;
 }
 
-body nav.services ul {
+body nav.services > ul {
 	list-style: none;
 	margin: 0; 
 	padding: 0 2em;
@@ -512,12 +554,12 @@ body nav.services ul {
 }
 
 /* BORROWED FROM INSPECT */ /* voor een korter begin van de lijst */
-body nav.services ul li:first-child {
+body nav.services > ul li:first-child {
 	margin-left: 0;
     padding-left: 4px;
 }
 
-body nav.services ul li {
+body nav.services > ul li {
 	/* spacing van alle list-items */
 	padding: 0 15px;
 
@@ -532,7 +574,7 @@ body nav.services ul li {
 }
 
 /* BORROWED FROM INSPECT */
-body nav.services ul li a {
+body nav.services > ul li a {
 	font-size: 12px;
 	font-weight: 300;
 	text-decoration: none;
@@ -541,7 +583,7 @@ body nav.services ul li a {
 	color: #000;
 }
 
-body nav.services ul li img {
+body nav.services > ul li img {
 	width: 50px;
 	height: 50px;
 }
@@ -556,7 +598,7 @@ body nav.services ul li img {
 
 /* no transitions added yet */
 
-main.services section:nth-child(1) {
+main.services>section:nth-child(1) {
 	padding: 55px 0px 65px 0px;
     text-align: center;
 
@@ -565,7 +607,7 @@ main.services section:nth-child(1) {
     justify-content: center;
 }
 
-main.services section:nth-child(1) h1, main.services section:nth-child(1) h2 {
+main.services>section:nth-child(1) h1, main.services section:nth-child(1) h2 {
 	/* font styling */
 	font-size: 45px;
     font-weight: 600;
@@ -578,7 +620,7 @@ main.services section:nth-child(1) h1, main.services section:nth-child(1) h2 {
 }
 
 
-main.services section:nth-child(1) h3 {
+main.services>section:nth-child(1) h3 {
 	margin-top: 22px; 
     width: 88%;
 	margin-right: auto;
@@ -596,7 +638,7 @@ main.services section:nth-child(1) h3 {
 
 /* **********  DIT IS DE 2de SECTION / BLACK BANNER *********** */
 /* ****************************** */
-main.services section:nth-child(2) {
+main.services>section:nth-child(2) {
 	background-color: #000;
 	color: #fff;
 	height: 288px;
@@ -615,7 +657,7 @@ Apple gebruikt veel div's binnen sections wat het soms lastig maakt om
 zelf alles te selecteren binnen de section. Dus nu een poging om alles samen
 te selecteren met een CSS code.
 */
-main.services section:nth-child(2) > img {
+main.services>section:nth-child(2) > img {
 	height: 70px;
 	width: auto;
 
@@ -628,7 +670,7 @@ main.services section:nth-child(2) > img {
 	transition: all 0.9s ease;
 }
 
-main.services section:nth-child(2) > h3 {
+main.services>section:nth-child(2) > h3 {
 	font-size: 21px;
 	font-weight: 500;
 	line-height: 1.09; 	/* BORROWED */
@@ -639,7 +681,7 @@ main.services section:nth-child(2) > h3 {
 	margin-right: auto;
 }
 
-main.services section:nth-child(2) button{
+main.services > section:nth-child(2) button{
 	cursor: pointer; 	/* BORROWED */
 	min-width: 28px;
     padding: 6px 14px;
@@ -666,142 +708,162 @@ main.services section:nth-child(2) button{
 
 /* **********  DIT IS DE 3de SECTION / FILM *********** */
 /* ****************************** */
-main.services section:nth-child(3) {
+main.services>section:nth-child(3) {
     padding-bottom: 130px;
 }
 
-main.services section:nth-child(3) article {
-	position: relative;
-	height: 500px;
+main.services>section:nth-child(3) > article {
+    position: relative;
+    height: 500px;
     width: 100vw; /* make the width of the section element responsive */
-	
 }
 
-main.services section:nth-child(3) video {
-	/* BORROWED */
-	width: 100%;
+main.services>section:nth-child(3) > article>video {
+    /* BORROWED */
+    width: 100%;
     height: 100%;
-	object-fit: cover;
-	position: absolute;
-	/* z-index: -1; */
+    object-fit: cover;
+    position: absolute;
+    /* z-index: -1; */
 }
 
-main.services section:nth-child(3) .film-article-content {
-	position: absolute;
-	z-index: 1;
-	bottom: 35px;
-	left:0;
+/* article that functions as a div container for the content split into two sections */
+main.services>section:nth-child(3) >article>section {
+    position: absolute;
+    z-index: 1;
+    bottom: 35px;
+    left:0;
 
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: wrap;
-	padding-right: 70px;
-	padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 70px;
+    padding-left: 28px;
 
-	color: #fff;
+    color: #fff;
 }
 
-main.services section:nth-child(3) .film-article-content img {
-	width: 27px;
-	height: 27px;
+/* section with the apple tv+ content */
+main.services>section:nth-child(3) > article>section > section:first-of-type{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 16px;
 }
 
-main.services section:nth-child(3) .film-article-content h3 {
-	font-size: 24px;
+
+main.services>section:nth-child(3) >article>section > section:first-of-type > img {
+    width: 27px;
+    height: 27px;
+    margin-bottom: 8px;
+}
+
+/* button transparant met witte border */
+main.services>section:nth-child(3) > article>section> section:first-of-type > button {
+    cursor: pointer;    /* BORROWED */
+    min-width: 12px;
+    padding: 4px 10px;
+    text-align: center;     /* De text wilt niet centreren */
+    white-space: nowrap;    /* BORROWED */
+
+    /* shaping the button */
+    border-radius: 980px;
+    border: 1px solid #fff;
+    background-color: initial;
+
+    /* font styling within the button borders */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    color: #fff;
+
+    margin-bottom: 8px;
+}
+
+main.services>section:nth-child(3) > article>section > section:first-of-type > h3 {
+    font-size: 24px;
     line-height: 1.1666666667;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: .022em;
 }
 
-/* button transparant met witte border */
-main.services section:nth-child(3) button:first-of-type {
-	cursor: pointer; 	/* BORROWED */
-	min-width: 12px;
-    padding: 4px 10px;
-	text-align: center;  	/* De text wilt niet centreren */
-	white-space: nowrap; 	/* BORROWED */
 
-	/* shaping the button */
-    border-radius: 980px;
-	border: 1px solid #fff;
-	background-color: initial;
-
-	/* font styling within the button borders */
-	font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-	font-size: 14px;
-    font-weight: 400;
-    letter-spacing: -0.022em;
-	color: #fff;
-	/* font-weight: 300;
-	font-style: normal;
-	font-size: 14px; */
+/* section with the two buttons content */
+main.services>section:nth-child(3) > article>section > section:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* button wit ingevuld */
-main.services section:nth-child(3) button:nth-of-type(2) {
-	cursor: pointer;    /* BORROWED */
+main.services>section:nth-child(3) > article>section > section:last-of-type > button:first-of-type {
+    cursor: pointer;    /* BORROWED */
     text-align: center;     /* De text wilt niet centreren */
     white-space: nowrap;    /* BORROWED */
-	
-	/* shaping the button */
-	min-width: 28px;	 /* BORROWED */
-    padding: 6px 14px;
-    border-radius: 980px;	 /* BORROWED */
-	border: 1px solid #fff;
-	background-color: #fff;
 
-	/* font styling within the button borders */
-	font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 17px;
+    margin-bottom: 14px;
+    
+    /* shaping the button */
+    min-width: 28px;     /* BORROWED */
+    padding: 8px 16px;
+    border-radius: 980px;    /* BORROWED */
+    border: 1px solid #f5f5f7;
+    background-color: #f5f5f7;
+
+    /* font styling within the button borders */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
 }
 
 /* button transparant met witte border */
-main.services section:nth-child(3) button:last-of-type {
-	cursor: pointer; 	/* BORROWED */
-	min-width: 28px;
+main.services>section:nth-child(3) >article>section > section:last-of-type > button:last-of-type {
+    cursor: pointer;    /* BORROWED */
+    min-width: 28px;
     padding: 6px 14px;
-	text-align: center;  	/* De text wilt niet centreren */
-	white-space: nowrap; 	/* BORROWED */
+    text-align: center;     /* De text wilt niet centreren */
+    white-space: nowrap;    /* BORROWED */
 
-	/* shaping the button */
+    /* shaping the button */
     border-radius: 980px;
-	border: 1px solid #fff;
-	background-color: initial;
+    border: 1px solid #fff;
+    background-color: initial;
 
-	/* font styling within the button borders */
-	font-family: sofia-pro,sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	color: #fff;
-	font-size: 17px;
+    /* font styling within the button borders */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 17px;
 }
 
-
-main.services section:nth-child(3) ul {
+/* unordered list voor de carousel */
+main.services>section:nth-child(3) > ul {
     display:flex;
     overflow-x:auto;
     -webkit-overflow-scrolling: touch;
     padding-left: 0;
-
 	padding: 0;
 }
 
-main.services section:nth-child(3) ul li {
+main.services>section:nth-child(3) > ul li {
     align-items:flex-start;
     display:flex;
     flex-direction: column;
-
-    font-family: sofia-pro,sans-serif;
-    font-size: 12px;
-    list-style: none;
-
 	padding: 0;
+
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    list-style: none;   
 }
 
-main.services section:nth-child(3) ul li img{
+main.services>section:nth-child(3) > ul > li > img{
     max-width: 18em;
     padding: .5em;
     padding-left: 0;
@@ -814,98 +876,170 @@ main.services section:nth-child(3) ul li img{
 
 
 
+
 /* **********  DIT IS DE 4de SECTION / MUSIC *********** */
 /* ****************************** */
-main.services section:nth-child(4) {
+main.services>section:nth-child(4) {
     padding-bottom: 130px;
 }
 
-main.services section:nth-child(4) section {
-    /* tijdelijke achtergrond kleur totdat tekst op video is gepositioneerd */
-	background-color: #010127;
-	opacity: 75%;
-
-	/* BORROWED for testing (again)
-	https://stackoverflow.com/questions/30892530/creating-a-section-with-video-as-background-html5 */
-	/* position: relative;
-    height:300px;
-    width:100%;
-    overflow: hidden; */
+main.services>section:nth-child(4) article {
+    position: relative;
+    height: 500px;
+    width: 100vw; /* make the width of the section element responsive */
 }
 
-main.services section:nth-child(4) section img {
-	width: 30px;
-	height: 30px;
-}
-
-main.services section:nth-child(4) video {
-    height: 100%;
+main.services>section:nth-child(4) article>video {
+    /* BORROWED */
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* z-index: -1; */
 }
 
-main.services section:nth-child(4) ul {
+/* article that functions as a div container for the content split into two sections */
+main.services>section:nth-child(4) article>section {
+	position: absolute;
+    z-index: 1;
+    bottom: 35px;
+    left:0;
+
+    display: flex;
+    flex-direction: column;
+    padding-right: 70px;
+    padding-left: 28px;
+
+    color: #fff;
+}
+
+/* section with the apple tv+ content */
+main.services>section:nth-child(4) article>section > section:first-of-type{
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+	flex-direction: row;
+    flex-wrap: wrap;
+
+	margin-bottom: 16px;
+}
+
+
+main.services>section:nth-child(4) article>section > section:first-of-type > img {
+	width: 27px;
+	height: 27px;
+	margin-bottom: 8px;
+}
+
+/* button transparant met witte border */
+main.services>section:nth-child(4) article>section> section:first-of-type > button {
+    cursor: pointer;    /* BORROWED */
+    min-width: 12px;
+    padding: 4px 10px;
+    text-align: center;     /* De text wilt niet centreren */
+    white-space: nowrap;    /* BORROWED */
+
+    /* shaping the button */
+    border-radius: 980px;
+    border: 1px solid #fff;
+    background-color: initial;
+
+    /* font styling within the button borders */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    color: #fff;
+
+	margin-bottom: 8px;
+}
+
+main.services>section:nth-child(4) article>section > section:first-of-type > h3 {
+	font-size: 24px;
+    line-height: 1.1666666667;
+    font-weight: 600;
+    letter-spacing: .022em;
+}
+
+
+/* section with the two buttons content */
+main.services>section:nth-child(4) article>section > section:last-of-type {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* button wit ingevuld */
+main.services>section:nth-child(4) article>section > section:last-of-type > button:first-of-type {
+    cursor: pointer;    /* BORROWED */
+    text-align: center;     /* De text wilt niet centreren */
+    white-space: nowrap;    /* BORROWED */
+
+	margin-bottom: 14px;
+    
+    /* shaping the button */
+    min-width: 28px;     /* BORROWED */
+    padding: 8px 16px;
+    border-radius: 980px;    /* BORROWED */
+    border: 1px solid #f5f5f7;
+    background-color: #f5f5f7;
+
+    /* font styling within the button borders */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+
+/* button transparant met witte border */
+main.services>section:nth-child(4) article>section > section:last-of-type > button:last-of-type {
+    cursor: pointer;    /* BORROWED */
+    min-width: 28px;
+    padding: 6px 14px;
+    text-align: center;     /* De text wilt niet centreren */
+    white-space: nowrap;    /* BORROWED */
+
+    /* shaping the button */
+    border-radius: 980px;
+    border: 1px solid #fff;
+    background-color: initial;
+
+    /* font styling within the button borders */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 17px;
+}
+
+/* unordered list voor de carousel */
+main.services>section:nth-child(4) ul {
     display:flex;
     overflow-x:auto;
     -webkit-overflow-scrolling: touch;
     padding-left: 0;
+	padding: 0;
+	margin: 0;
 }
 
-main.services section:nth-child(4) ul li {
+main.services>section:nth-child(4) ul li {
     align-items:flex-start;
     display:flex;
     flex-direction: column;
+	padding: 0;
 
-    font-family: sofia-pro,sans-serif;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 12px;
     list-style: none;   
 }
 
-main.services section:nth-child(4) ul li img{
+main.services>section:nth-child(4) ul li img{
     max-width: 12em;
     padding: .5em;
     padding-left: 0;
     border-radius: 10px;
-}
-
-/* button wit ingevuld */
-main.services section:nth-child(4) button:nth-of-type(2) {
-	cursor: pointer;    /* BORROWED */
-    text-align: center;     /* De text wilt niet centreren */
-    white-space: nowrap;    /* BORROWED */
-	
-	/* shaping the button */
-	min-width: 28px;	 /* BORROWED */
-    padding: 6px 14px;
-    border-radius: 980px;	 /* BORROWED */
-	border: 1px solid #fff;
-	background-color: #fff;
-
-	/* font styling within the button borders */
-	font-family: sofia-pro,sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 17px;
-}
-
-/* button transparant met witte border */
-main.services section:nth-child(4) button:last-of-type{
-	cursor: pointer; 	/* BORROWED */
-	min-width: 28px;
-    padding: 6px 14px;
-	text-align: center;  	/* De text wilt niet centreren */
-	white-space: nowrap; 	/* BORROWED */
-
-	/* shaping the button */
-    border-radius: 980px;
-	border: 1px solid #fff;
-	background-color: initial;
-
-	/* font styling within the button borders */
-	font-family: sofia-pro,sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	color: #fff;
-	font-size: 17px;
 }
 
 
@@ -913,96 +1047,167 @@ main.services section:nth-child(4) button:last-of-type{
 
 /* **********  DIT IS DE 5de SECTION / GAMES *********** */
 /* ****************************** */
-main.services section:nth-child(5) {
+main.services>section:nth-child(5) {
     padding-bottom: 130px;
 }
 
-main.services section:nth-child(5) section {
-    /* tijdelijke achtergrond kleur totdat tekst op video is gepositioneerd */
-	background-color: #010127;
-	opacity: 75%;
-
-	/* BORROWED for testing (again)
-	https://stackoverflow.com/questions/30892530/creating-a-section-with-video-as-background-html5 */
-	/* position: relative;
-    height:300px;
-    width:100%;
-    overflow: hidden; */
+main.services>section:nth-child(5) > article {
+    position: relative;
+    height: 500px;
+    width: 100vw; /* make the width of the section element responsive */
 }
 
-main.services section:nth-child(5) section img {
-	width: 30px;
-	height: 30px;
-}
-
-main.services section:nth-child(5) video {
-    height: 100%;
+main.services>section:nth-child(5) > article>video {
+    /* BORROWED */
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* z-index: -1; */
 }
 
-main.services section:nth-child(5) ul {
+/* article that functions as a div container for the content split into two sections */
+main.services>section:nth-child(5) >article>section {
+    position: absolute;
+    z-index: 1;
+    bottom: 35px;
+    left:0;
+
+    display: flex;
+    flex-direction: column;
+    padding-right: 70px;
+    padding-left: 28px;
+
+    color: #fff;
+}
+
+/* section with the apple tv+ content */
+main.services>section:nth-child(5) > article>section > section:first-of-type{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 16px;
+}
+
+
+main.services>section:nth-child(5) >article>section > section:first-of-type > img {
+    width: 27px;
+    height: 27px;
+    margin-bottom: 8px;
+}
+
+/* button transparant met witte border */
+main.services>section:nth-child(5) > article>section> section:first-of-type > button {
+    cursor: pointer;    /* BORROWED */
+    min-width: 12px;
+    padding: 4px 10px;
+    text-align: center;     /* De text wilt niet centreren */
+    white-space: nowrap;    /* BORROWED */
+
+    /* shaping the button */
+    border-radius: 980px;
+    border: 1px solid #fff;
+    background-color: initial;
+
+    /* font styling within the button borders */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    color: #fff;
+
+    margin-bottom: 8px;
+}
+
+main.services>section:nth-child(5) > article>section > section:first-of-type > h3 {
+    font-size: 24px;
+    line-height: 1.1666666667;
+    font-weight: 600;
+    letter-spacing: .022em;
+}
+
+
+/* section with the two buttons content */
+main.services>section:nth-child(5) > article>section > section:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* button wit ingevuld */
+main.services>section:nth-child(5) > article>section > section:last-of-type > button:first-of-type {
+    cursor: pointer;    /* BORROWED */
+    text-align: center;     /* De text wilt niet centreren */
+    white-space: nowrap;    /* BORROWED */
+
+    margin-bottom: 14px;
+    
+    /* shaping the button */
+    min-width: 28px;     /* BORROWED */
+    padding: 8px 16px;
+    border-radius: 980px;    /* BORROWED */
+    border: 1px solid #f5f5f7;
+    background-color: #f5f5f7;
+
+    /* font styling within the button borders */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+
+/* button transparant met witte border */
+main.services>section:nth-child(5) >article>section > section:last-of-type > button:last-of-type {
+    cursor: pointer;    /* BORROWED */
+    min-width: 28px;
+    padding: 6px 14px;
+    text-align: center;     /* De text wilt niet centreren */
+    white-space: nowrap;    /* BORROWED */
+
+    /* shaping the button */
+    border-radius: 980px;
+    border: 1px solid #fff;
+    background-color: initial;
+
+    /* font styling within the button borders */
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 17px;
+}
+
+/* unordered list voor de carousel */
+main.services>section:nth-child(5) > ul {
     display:flex;
     overflow-x:auto;
     -webkit-overflow-scrolling: touch;
     padding-left: 0;
+	padding: 0;
+	margin: 0;
 }
 
-main.services section:nth-child(5) ul li {
+main.services>section:nth-child(5) > ul li {
     align-items:flex-start;
     display:flex;
     flex-direction: column;
+	padding: 0;
 
-    font-family: sofia-pro,sans-serif;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 12px;
     list-style: none;   
 }
 
-main.services section:nth-child(5) ul li img{
-    max-width: 15em;
+main.services>section:nth-child(5) > ul > li > img{
+    max-width: 18em;
     padding: .5em;
     padding-left: 0;
-    border-radius: 12px;
-}
-
-/* button wit ingevuld */
-main.services section:nth-child(5) button:nth-of-type(2) {
-	cursor: pointer;    /* BORROWED */
-    text-align: center;     /* De text wilt niet centreren */
-    white-space: nowrap;    /* BORROWED */
-	
-	/* shaping the button */
-	min-width: 28px;	 /* BORROWED */
-    padding: 6px 14px;
-    border-radius: 980px;	 /* BORROWED */
-	border: 1px solid #fff;
-	background-color: #fff;
-
-	/* font styling within the button borders */
-	font-family: sofia-pro,sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 17px;
-}
-
-/* button transparant met witte border */
-main.services section:nth-child(5) button:last-of-type{
-	cursor: pointer; 	/* BORROWED */
-	min-width: 28px;
-    padding: 6px 14px;
-	text-align: center;  	/* De text wilt niet centreren */
-	white-space: nowrap; 	/* BORROWED */
-
-	/* shaping the button */
-    border-radius: 980px;
-	border: 1px solid #fff;
-	background-color: initial;
-
-	/* font styling within the button borders */
-	font-family: sofia-pro,sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	color: #fff;
-	font-size: 17px;
+    border-radius: 10px;
 }
 
 
@@ -1012,7 +1217,7 @@ main.services section:nth-child(5) button:last-of-type{
 /* **********  DIT IS DE 6de SECTION / BANNER WHITE *********** */
 /* ****************************** */
 
-main.services section:nth-child(6) {
+main.services>section:nth-child(6) {
 	background-color: #F9F9FA;
 	/* height: 288px; */
 	height: 100%;
@@ -1026,7 +1231,7 @@ main.services section:nth-child(6) {
 	align-items: center;
 }
 
-main.services section:nth-child(6) img:first-of-type {
+main.services>section:nth-child(6) img:first-of-type {
 	height: auto;
 	width: 130px;
 
@@ -1036,7 +1241,7 @@ main.services section:nth-child(6) img:first-of-type {
     margin-bottom: 20px;
 }
 
-main.services section:nth-child(6) > h3 {
+main.services>section:nth-child(6) > h3 {
     font-size: 17px;
     font-weight: 500;
     line-height: 1.09;  /* BORROWED */
@@ -1045,7 +1250,7 @@ main.services section:nth-child(6) > h3 {
 }
 
 /* BORROWED */
-main.services section:nth-child(6) ul {
+main.services>section:nth-child(6) ul {
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -1053,24 +1258,24 @@ main.services section:nth-child(6) ul {
 }
 
 /* BORROWED */
-main.services section:nth-child(6) li:first-of-type {
+main.services>section:nth-child(6) li:first-of-type {
 	display: inline;
     margin: 0 0.8em;
 	margin-right: 8px;
 }
 
 /* BORROWED */
-main.services section:nth-child(6) li:last-of-type {
+main.services>section:nth-child(6) li:last-of-type {
 	display: inline;
     margin: 0 0.8em;
 	margin-left: 9px;
 }
 
-main.services section:nth-child(6) li:last-of-type a {
+main.services>section:nth-child(6) li:last-of-type a {
 	color: #000;
 }
 
-main.services section:nth-child(6) button {
+main.services>section:nth-child(6) button {
 	cursor: pointer;    /* BORROWED */
     text-align: center;     /* De text wilt niet centreren */
     white-space: nowrap;    /* BORROWED */
@@ -1090,7 +1295,7 @@ main.services section:nth-child(6) button {
 	font-size: 17px;
 }
 
-main.services section:nth-child(6) img:nth-of-type(2) {
+main.services>section:nth-child(6) img:nth-of-type(2) {
 	display: block;	/* BORROWED */
     position: relative;	/* BORROWED */
     left: 15px;	/* BORROWED */
