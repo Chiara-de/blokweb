@@ -85,8 +85,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Apple heeft niet per se voor alle visuele beperkingen een uitzondering gemaakt, denk aan blurry vision. Maar door de hoge contrast in de website opmaak is de content in alle gevallen duidelijk. Er is geen verschil in de light\dark modus. Voor het geval dat een persoon met een bril een keer zonder bril de apple website moet navigeren, dan kan het nog net door de grote onderscheid in lettergrootte en kleur contrast.
   <img src="readme-images/toegankelijkheid-visueel-blurry.jpg" width="375px" alt="home pagina met blurry vision enabled">
-  <img src="readme-images/toegankelijkheid-visueel-color3-Achromatopsia(geen-kleur).jpg" width="375px" alt="home pagina met Achromatopsia(geen-kleur) enabled">
-  ![My Image](readme-images/toegankelijkheid-visueel-color3-Achromatopsia(geen-kleur).jpg)
+  <img src="/readme-images/toegankelijkheid-visueel-color3-Achromatopsia(geen-kleur).jpg" width="375px" alt="home pagina met Achromatopsia(geen-kleur) enabled">
 
   Voor dit onderdeel weet ik zelf geen verbetering om toe te voegen zonder de opmaak nadelig aan te passen.
 
