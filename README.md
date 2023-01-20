@@ -40,15 +40,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Thuispagina  
-  <img src="readme-images/homepage-apple-1.jpg" width="375px" alt="eerste gedeelte van de thuispagina"> 
-  <img src="readme-images/homepage-apple-2.jpg" width="375px" alt="tweede gedeelte van de thuispagina">
-  <img src="readme-images/homepage-apple-3.jpg" width="375px" alt="eerste gedeelte van de thuispagina">
+  <img src="readme-images/homepage-apple-1.jpg" width="275px" alt="eerste gedeelte van de thuispagina"> 
+  <img src="readme-images/homepage-apple-2.jpg" width="275px" alt="tweede gedeelte van de thuispagina">
+  <img src="readme-images/homepage-apple-3.jpg" width="275px" alt="eerste gedeelte van de thuispagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Services pagina 
-  <img src="readme-images/applXclusive-page-1.jpg" width="375px" alt="eerste gedeelte van de alleen-bij-apple pagina">
-  <img src="readme-images/applXclusive-page-2.jpg" width="375px" alt="eerste gedeelte van de alleen-bij-apple pagina">
-  <img src="readme-images/applXclusive-page-3.jpg" width="375px" alt="eerste gedeelte van de alleen-bij-apple pagina">
+  <img src="readme-images/applXclusive-page-1.jpg" width="275px" alt="eerste gedeelte van de alleen-bij-apple pagina">
+  <img src="readme-images/applXclusive-page-2.jpg" width="275px" alt="eerste gedeelte van de alleen-bij-apple pagina">
+  <img src="readme-images/applXclusive-page-3.jpg" width="275px" alt="eerste gedeelte van de alleen-bij-apple pagina">
  
 </details>
 
@@ -84,8 +84,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Apple heeft niet per se voor alle visuele beperkingen een uitzondering gemaakt, denk aan blurry vision. Maar door de hoge contrast in de website opmaak is de content in alle gevallen duidelijk. Er is geen verschil in de light\dark modus. Voor het geval dat een persoon met een bril een keer zonder bril de apple website moet navigeren, dan kan het nog net door de grote onderscheid in lettergrootte en kleur contrast.
-  <img src="readme-images/toegankelijkheid-visueel-blurry.jpg" width="375px" alt="home pagina met blurry vision enabled">
-  <img src="/readme-images/toegankelijkheid-visueel-color3-Achromatopsia(geen-kleur).jpg" width="375px" alt="home pagina met Achromatopsia(geen-kleur) enabled">
+  <img src="readme-images/toegankelijkheid-visueel-blurry.jpg" width="275px" alt="home pagina met blurry vision enabled">
+  <img src="readme-images/toegankelijkheid-visueel-color3-Achromatopsia(geen-kleur).jpg" width="275px" alt="home pagina met Achromatopsia(geen-kleur) enabled">
 
   Voor dit onderdeel weet ik zelf geen verbetering om toe te voegen zonder de opmaak nadelig aan te passen.
 
@@ -99,11 +99,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdown-home-top.jpg" width="375px" alt="breakdown van de hele pagina">
-  <img src="readme-images/breakdown-home-footer.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-home-top.jpg" width="275px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-home-footer.jpg" width="275px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/breakdown-home-dynamisch-menu.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdown-home-dynamisch-menu.jpg" width="275px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -255,21 +255,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/final-image1.jpg" width="375px" alt="mijn website versie 1">
-  <img src="readme-images/final-image2.jpg" width="375px" alt="mijn website versie 1">
+  <img src="readme-images/final-image1.jpg" width="275px" alt="mijn website versie 1">
+  <img src="readme-images/final-image2.jpg" width="275px" alt="mijn website versie 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   De hamburger menu en werken met de css met selectors (mostly).
 
-  <img src="readme-images/final-made1.jpg" width="375px" alt="top">
+  <img src="readme-images/final-made1.jpg" width="275px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Het plaatsen van de section op de video, en de poster-list items op de home pagina
 
-  <img src="readme-images/final-missed1.jpg" width="375px" alt="bummer">
-  <img src="readme-images/final-missed2.jpg" width="375px" alt="bummer">
+  <img src="readme-images/final-missed1.jpg" width="275px" alt="bummer">
+  <img src="readme-images/final-missed2.jpg" width="275px" alt="bummer">
 </details>
 
 
